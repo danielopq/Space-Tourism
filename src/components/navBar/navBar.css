@@ -1,0 +1,11 @@
+nav{
+    width: 1440px;
+    height: 96px;
+    border: solid 1px red;
+}
+
+#logo{
+    width: 48px;
+    height: 48px;
+    background: url('./img/logo.svg') center/48px no-repeat ;
+}
