@@ -27,6 +27,7 @@ nav > div{
 }
 
 #navBarline{
+    z-index: 3;
     width: 560px;
     height: 1px;
     background-color: rgba(255,255,255,0.25);
@@ -39,8 +40,8 @@ nav > div{
     align-items: flex-start;
     justify-content: flex-end;
     background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .navbarSectionLink{
@@ -49,14 +50,20 @@ nav > div{
     color: white;
 }
 
-.active:hover{
-    border-bottom: solid 3px rgba(255, 255, 255, 0.5);
-    cursor:pointer;
+.active {
+    cursor: pointer;
+    border-bottom: solid 3px rgba(255, 255, 255, 0); /* El borde comienza invisible */
+    transition: border-bottom-color 0.75s ease-out; /* Solo animamos el color del borde */
+}
+
+.active:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.5); /* Al hacer hover, el color aparece */
 }
 
 .inactive{
     border-bottom: solid 3px white;
 }
+
 
 .sectionNumber{
     font: 700 16px/96px 'BarlowCondensed-Regular';
