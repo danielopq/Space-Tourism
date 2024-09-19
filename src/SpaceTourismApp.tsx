@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from './components/navBar/NavBar';
 import Home from "./components/home/Home";
 import Destination from "./components/destination/Destination";
+import Crew from "./components/crew/Crew";
 
 const SpaceTourismApp = () => {
     return (
@@ -9,7 +10,8 @@ const SpaceTourismApp = () => {
             <NavBar/>
             <Routes>
                 {/* <Route path="/" element={<Home/>}/> */}
-                <Route path="/" element={<Destination/>}/>
+                {/* <Route path="/" element={<Destination/>}/> */}
+                <Route path="/" element={<Crew/>}/>
             </Routes>
         </>
 
