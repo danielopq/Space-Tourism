@@ -32,7 +32,7 @@ const NavBar = () => {
     }
 
     return (
-        <nav>
+        <nav id="mainNavBar">
             <div id="navBarLeft">
                 <div id="logo"></div>
                 <div id="navBarline"></div>

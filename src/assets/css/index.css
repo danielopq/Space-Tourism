@@ -18,7 +18,7 @@ body{
     justify-content: flex-start;
     margin:0px;
     padding: 0px;
-    background: black url('../img/home/background-home-desktop.jpg') center/1440px no-repeat;
+    background-color: black;
 }
 
 nav{

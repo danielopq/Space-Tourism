@@ -1,13 +1,14 @@
-nav{
+#mainNavBar{
+    position: fixed;
     width: 1440px;
     height: 96px;
     display:flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 40px!important;
+    margin-top: 40px;
 }
 
-nav > div{
+#mainNavBar > div{
     height: inherit;
     display:flex;
     flex-direction: row;
