@@ -1,12 +1,23 @@
 @font-face {
     font-family: 'BarlowCondensed-Regular';
-    src: url('../fonts/BarlowCondensed-Regular.woff');
+    src: url('../fonts/BarlowCondensed-Regular.woff')format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Bellefair-Regular';
+    src: url('../fonts/Bellefair-Regular.woff')format('woff');
     font-style: normal;
     font-weight: 400;
 }
 
 *{
     box-sizing: border-box;
+}
+
+:root{
+    --lightBlue: #D0D6F9;
 }
 
 body{
@@ -24,4 +35,20 @@ body{
 nav{
     padding: 0px;
     margin: 0px;
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainText{
+    font: 400 18px/32px 'BarlowCondensed-Regular';
+    color: var(--lightBlue);
 }

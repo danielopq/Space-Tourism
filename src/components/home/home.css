@@ -1,4 +1,4 @@
-#home{
+#home {
     width: 1440px;
     height: 1024px;
     background: black url('./img/background-home-desktop.jpg') top/cover no-repeat;
@@ -6,9 +6,49 @@
     justify-content: center;
 }
 
-#homeMainContent{
+#homeMainContent {
     width: 1110px;
     height: 632px;
     margin-top: 264px;
+    padding-top: 289px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px red;
+}
+
+#homeText {
+    width: 540px;
+    height: 343px;
+    border: solid 1px red;
+}
+
+#homeTextHeader {
+    width: inherit;
+    height: 34px;
+    margin-bottom: 24px;
+    font: 400 28px/33px 'BarlowCondensed-Regular';
+    letter-spacing: 4px;
+    color: var(--lightBlue);
+}
+
+#homeText h1 {
+    width: inherit;
+    height: 165px;
+    font: 400 144px/165px 'Bellefair-Regular';
+    border: solid 1px red;
+}
+
+#homeTextMain{
+    width: inherit;
+    height: 96px;
+    margin-top: 24px;
+    border: solid 1px red;
+}
+
+#homeExploreBt {
+    width: 272px;
+    height: 272px;
     border: solid 1px red;
 }
