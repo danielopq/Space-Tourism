@@ -2,4 +2,13 @@
     width: 1440px;
     height: 1024px;
     background: black url('./img/background-home-desktop.jpg') top/cover no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+#homeMainContent{
+    width: 1110px;
+    height: 632px;
+    margin-top: 264px;
+    border: solid 1px red;
 }
