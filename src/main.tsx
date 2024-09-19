@@ -6,7 +6,7 @@ import '../src/assets/css/index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <NavBar/>
-    <Home/>
+    <NavBar />
+    <Home />
   </StrictMode>,
 )
