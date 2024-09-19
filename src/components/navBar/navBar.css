@@ -1,11 +1,69 @@
 nav{
     width: 1440px;
     height: 96px;
-    border: solid 1px red;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px!important;
+}
+
+nav > div{
+    height: inherit;
+    display:flex;
+    flex-direction: row;
+}
+
+#navBarLeft{
+    width: 736px;
+    padding-left: 64px;
+    align-items: center;
+    margin-right: -32px;
 }
 
 #logo{
     width: 48px;
     height: 48px;
     background: url('./img/logo.svg') center/48px no-repeat ;
+}
+
+#navBarline{
+    width: 560px;
+    height: 1px;
+    background-color: rgba(255,255,255,0.25);
+    margin-left: 64px;
+}
+
+#navBarRight{
+    width: 736px;
+    padding-right: 64px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbarSectionLink{
+    height: 93px;
+    margin-left: 48px;
+    color: white;
+}
+
+.active:hover{
+    border-bottom: solid 3px rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+}
+
+.inactive{
+    border-bottom: solid 3px white;
+}
+
+.sectionNumber{
+    font: 700 16px/96px 'BarlowCondensed-Regular';
+    letter-spacing: 2.7px;
+}
+
+.sectionName{
+    font: 400 16px/96px 'BarlowCondensed-Regular';
+    letter-spacing: 2px;
 }
