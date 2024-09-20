@@ -2,9 +2,9 @@ import './crew.css'
 
 const Crew: React.FC = () => {
     return (
-        <main id="crew">
+        <div id="crew">
             <div id="crewMainContent"></div>
-        </main>
+        </div>
     )
 }
 export default Crew

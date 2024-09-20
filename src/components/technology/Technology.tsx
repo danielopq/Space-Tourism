@@ -2,11 +2,11 @@ import './technology.css'
 
 const Technology: React.FC = () => {
     return (
-        <main id="technology">
+        <div id="technology">
             <div id="technologyMainContent">
 
             </div>
-        </main>
+        </div>
     )
 }
 export default Technology

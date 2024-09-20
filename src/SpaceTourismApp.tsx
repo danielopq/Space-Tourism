@@ -7,7 +7,7 @@ import Technology from "./components/technology/Technology";
 
 const SpaceTourismApp = () => {
     return (
-        <>
+        <main>
             <NavBar />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -15,7 +15,7 @@ const SpaceTourismApp = () => {
                 <Route path="/crew" element={<Crew />} />
                 <Route path="/technology" element={<Technology />} />
             </Routes>
-        </>
+        </main>
 
     )
 }
