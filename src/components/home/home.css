@@ -15,13 +15,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: solid 1px red;
 }
 
 #homeText {
     width: 540px;
     height: 343px;
-    border: solid 1px red;
 }
 
 #homeTextHeader {
@@ -37,18 +35,27 @@
     width: inherit;
     height: 165px;
     font: 400 144px/165px 'Bellefair-Regular';
-    border: solid 1px red;
 }
 
 #homeTextMain{
     width: inherit;
     height: 96px;
     margin-top: 24px;
-    border: solid 1px red;
 }
 
 #homeExploreBt {
     width: 272px;
     height: 272px;
-    border: solid 1px red;
+    border-radius: 50%;
+    transition: box-shadow 0.5s ease-out, color 0.5s ease-out;
+    color: #0B0D17;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font: 400 32px 'Bellefair-Regular';
+}
+
+#homeExploreBt:hover {
+    box-shadow: 0 0 0 88px rgba(255,255,255,0.1);
+    color: rgba(11,13,23,0.5)
 }

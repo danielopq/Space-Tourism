@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'Barlow-Regular';
+    src: url('../fonts/Barlow-Regular.woff')format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
     font-family: 'BarlowCondensed-Regular';
     src: url('../fonts/BarlowCondensed-Regular.woff')format('woff');
     font-style: normal;
@@ -49,6 +56,6 @@ p{
 }
 
 .mainText{
-    font: 400 18px/32px 'BarlowCondensed-Regular';
+    font: 400 18px/32px 'Barlow-Regular';
     color: var(--lightBlue);
 }
