@@ -5,7 +5,6 @@ import './home.css'
 const Home:React.FC = () => {
     return (
         <div id="home">
-            <div id="homeMainContent">
                 <div id="homeText">
                     <p id="homeTextHeader">SO, YOU WANT TO TRAVEL TO</p>
                     <h1>SPACE</h1>
@@ -17,7 +16,6 @@ const Home:React.FC = () => {
                 </div>
                 <button id="homeExploreBt">EXPLORE</button>
             </div>
-        </div>
     )
 }
 

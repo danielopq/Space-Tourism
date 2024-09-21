@@ -1,15 +1,7 @@
 #home {
-    width: 1440px;
-    height: 1024px;
-    display: flex;
-    justify-content: center;
-    border: solid 1px red;
-}
-
-#homeMainContent {
     width: 1110px;
     height: 632px;
-    margin-top: 264px;
+    margin-top: 128px;
     padding-top: 289px;
     display: flex;
     flex-direction: row;
