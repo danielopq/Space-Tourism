@@ -7,6 +7,9 @@ const Technology: React.FC = () => {
                 <span className='sectionNumber'>03 </span>
                 <span className='sectionTitle'>SPACE LAUNCH 101</span>
             </div>
+            <div id="technologyMain">
+
+            </div>
         </div>
     )
 }

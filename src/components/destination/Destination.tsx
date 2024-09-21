@@ -7,6 +7,9 @@ const Destination: React.FC = () => {
                 <span className='sectionNumber'>01 </span>
                 <span className='sectionTitle'>PICK YOUR DESTINATION</span>
             </div>
+            <div id="destinationMain">
+
+            </div>
         </div>
     )
 }

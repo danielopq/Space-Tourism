@@ -7,6 +7,9 @@ const Crew: React.FC = () => {
                 <span className='sectionNumber'>02 </span>
                 <span className='sectionTitle'>MEET YOUR CREW</span>
             </div>
+            <div id="crewMain">
+
+            </div>
         </div>
     )
 }
