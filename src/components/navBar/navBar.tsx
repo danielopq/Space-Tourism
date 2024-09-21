@@ -2,13 +2,15 @@ import { useState } from 'react';
 import './navBar.css';
 import { useNavigate } from 'react-router-dom';
 
+type NavBarProps = {
+    changeBackgroundPic:(section:string)=>void;
+};
 
 /**
  * Contains the main navigation bar. It remains visible at all times.
  * @returns {React.FC} - Navigation bar
  */
-const NavBar: React.FC = () => {
-
+const NavBar: React.FC<NavBarProps> = ({ changeBackgroundPic }) => {
     interface LinkState {
         homeLinkState: string;
         destinationLinkState: string;
@@ -30,10 +32,9 @@ const NavBar: React.FC = () => {
 
     /**
      * Displays the different sections of the website and updates the link state (active or inactive).
-     * @param {string} link - Link name
+     * @param {string} section - Section name
      */
-    const handleClick = (link: string): void => {
-        console.log()
+    const handleClick = (section: string): void => {
         let newState: LinkState = {
             homeLinkState: 'navbarSectionLink active',
             destinationLinkState: 'navbarSectionLink active',
@@ -41,10 +42,11 @@ const NavBar: React.FC = () => {
             technologyLinkState: 'navbarSectionLink active',
         }
         //If the link is active displays the corresponding section.
-        if (linkState[`${link}LinkState` as keyof LinkState] != 'navbarSectionLink inactive') {
-            link == "home" ? navigate('/') : navigate(`/${link}`);
+        if (linkState[`${section}LinkState` as keyof LinkState] != 'navbarSectionLink inactive') {
+            section === "home" ? navigate('/') : navigate(`/${section}`);
+            changeBackgroundPic(section);
         }
-        setLinkState({ ...newState, [`${link}LinkState`]: 'navbarSectionLink inactive' });
+        setLinkState({ ...newState, [`${section}LinkState`]: 'navbarSectionLink inactive' });
     }
 
     return (

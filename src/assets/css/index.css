@@ -55,6 +55,10 @@ p{
     padding: 0px;
 }
 
+main{
+    margin: 0px;
+}
+
 .mainText{
     font: 400 18px/32px 'Barlow-Regular';
     color: var(--lightBlue);
