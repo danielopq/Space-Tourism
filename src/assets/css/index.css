@@ -63,3 +63,11 @@ main{
     font: 400 18px/32px 'Barlow-Regular';
     color: var(--lightBlue);
 }
+
+/*Defines sections size and margins*/
+.sectionFrame{
+    width: 1110px;
+    height: 792px;
+    margin-top: 48px;
+    border: solid 1px red;
+}

@@ -2,8 +2,7 @@ import './crew.css'
 
 const Crew: React.FC = () => {
     return (
-        <div id="crew">
-            <div id="crewMainContent"></div>
+        <div id="crew" className='sectionFrame'>
         </div>
     )
 }

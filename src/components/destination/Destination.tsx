@@ -2,8 +2,7 @@ import './destination.css'
 
 const Destination: React.FC = () => {
     return (
-        <div id="destination">
-            <div id="destinationMainContent"></div>
+        <div id="destination" className='sectionFrame'>
         </div>
     )
 }
