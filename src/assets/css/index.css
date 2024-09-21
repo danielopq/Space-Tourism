@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'BarlowCondensed-Bold';
+    src: url('../fonts/BarlowCondensed-Bold.woff')format('woff');
+    font-style: bold;
+    font-weight: 700;
+}
+
+@font-face {
     font-family: 'Bellefair-Regular';
     src: url('../fonts/Bellefair-Regular.woff')format('woff');
     font-style: normal;
@@ -68,6 +75,31 @@ main{
 .sectionFrame{
     width: 1110px;
     height: 792px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 48px;
     border: solid 1px red;
+}
+/*Defines section header size and margins*/
+.sectionHeader{
+    height: 34px;
+    width: 100%;
+    border: solid 1px blue;
+}
+
+/*Defines the section number font style*/
+.sectionNumber{
+    font: 700 28px/34px 'BarlowCondensed-Bold';
+    color: rgba(255,255,255,0.25);
+    letter-spacing: 4.72px;
+}
+
+/*Defines the section title font style*/
+
+.sectionTitle{
+    font: 400 28px/34px 'BarlowCondensed-Regular';
+    color: white;
+    letter-spacing: 4.2px;
 }
