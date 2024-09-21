@@ -1,5 +1,71 @@
 #destinationMain{
     width: inherit;
     height: 734px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border: solid 1px green;
+}
+
+#destinationPic{
+    width: 480px;
+    height: 480px;
+    border: solid 1px red;
+    margin: 0px 108px 0px 29px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./img/image-moon.png');
+}
+
+#destinationContent{
+    width: 445px;
+    height: 468px;
+    border: solid 1px red;
+}
+
+#destinationNavbar{
+    width: inherit;
+    height: 32px;
+    border: solid 1px red;
+}
+
+#destinationPlanetName{
+    width: inherit;
+    height: 110px;
+    margin-top: 40px;
+    border: solid 1px red;
+}
+
+#destinationMainText{
+    width: inherit;
+    height: 128px;
+    margin-top: 16px;
+    border: solid 1px red;
+}
+
+#destinationData{
+    width: inherit;
+    height: 101px;
+    margin-top: 40px;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#destinationData > div{
+    width: 210px;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+}
+
+#destinationDistance{
+    border: solid 1px red;
+}
+
+#destinationTime{
+    border: solid 1px red;
 }
