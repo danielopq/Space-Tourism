@@ -1,17 +1,23 @@
 import { useState } from "react";
+import destinationData from "../destinationData/destInationData";
 import './destinationNavBar.css';
 
-//Contains the navigation bar for the destination section.
 
-const DestinationNavbar:React.FC = () =>{
+interface TripPlan {
+    planetName: string,
+    tripDescription: string,
+    distance: string,
+    travelTime: string,
+    picPath: string
+}
 
-    interface TripPlan{
-        planetName:string,
-        tripDescription:string,
-        distance:string,
-        travelTime:string,
-        picPath:string
-    }
+interface navBarProps {
+    setTriplan: (tripPlan: TripPlan) => void;
+}
+
+const DestinationNavbar:React.FC<navBarProps> = ({setTriplan}) =>{
+
+    const { moon, mars, europa,titan } = destinationData;
 
     interface LinksState {
         moonLinkState: string;
@@ -38,8 +44,23 @@ const DestinationNavbar:React.FC = () =>{
             europaLinkState: 'destNavBarButton destNavBarActive',
             titanLinkState: 'destNavBarButton destNavBarActive',
         }
-
+       
         setLinkState({...newLinksState,[`${section}LinkState`]:'destNavBarButton destNavBarInactive'})
+
+        switch (section){
+            case 'moon':
+                setTriplan(moon);
+                break;
+            case 'mars':
+                setTriplan(mars);
+                break;
+            case 'europa':
+                setTriplan(europa);
+                break;
+            case 'titan':
+                setTriplan(titan);
+                break;
+        }
     }
 
     return (

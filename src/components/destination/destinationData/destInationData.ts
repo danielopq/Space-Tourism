@@ -1,4 +1,7 @@
-import moonImage from './img/image-moon.webp';
+import moonImage from '../img/image-moon.webp';
+import marsImage from '../img/image-mars.webp';
+import europaImage from '../img/image-europa.webp';
+import titanImage from '../img/image-titan.webp';
 
 interface TripPlan {
     planetName: string,
@@ -25,21 +28,21 @@ const destinationData: Trips = {
         tripDescription: 'Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!',
         distance: '225 MIL. KM',
         travelTime: '9 MONTHS',
-        picPath: ''
+        picPath: marsImage
     },
     europa: {
         planetName: 'EUROPA',
         tripDescription: 'The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.',
         distance: '628 MIL. KM',
         travelTime: '3 YEARS',
-        picPath: ''
+        picPath: europaImage
     },
     titan: {
         planetName: 'TITAN',
         tripDescription: 'The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.',
         distance: '1.6 BIL. KM',
         travelTime: '7 YEARS',
-        picPath: ''
+        picPath: titanImage
     },
 
 }

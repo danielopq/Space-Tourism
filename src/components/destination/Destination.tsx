@@ -1,7 +1,7 @@
+import { useState } from 'react'
 import DestinationNavbar from './destinationNavBar/DestinationNavBar';
+import destinationData from './destinationData/destInationData';
 import './destination.css'
-import { useState } from 'react';
-import destinationData from './destinationData/DestInationData';
 
 const Destination: React.FC = () => {
 
@@ -12,9 +12,8 @@ const Destination: React.FC = () => {
         travelTime: string,
         picPath: string
     }
-    const { moon, mars, europa,titan } = destinationData
-    const [tripPlan, setTriplan] = useState<TripPlan>(moon);
     
+    const [tripPlan, setTriplan] = useState<TripPlan>(destinationData.moon);
     const { planetName, tripDescription, distance, travelTime, picPath } = tripPlan;
 
     return (
@@ -26,7 +25,7 @@ const Destination: React.FC = () => {
             <div id="destinationMain">
                 <div id="destinationPic" style={{ backgroundImage: `url(${picPath})` }}></div>
                 <div id="destinationContent">
-                    <DestinationNavbar />
+                    <DestinationNavbar setTriplan={setTriplan}/>
                     <h1 id="destinationPlanetName">{planetName}</h1>
                     <p id="destinationMainText" className='mainText'>{tripDescription}</p>
                     <div id="destinationData">
