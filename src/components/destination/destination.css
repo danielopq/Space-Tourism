@@ -21,38 +21,6 @@
     height: 468px;
 }
 
-#destinationNavbar{
-    width: inherit;
-    height: 32px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.destNavBarButton{
-    height: 29px;
-    font: 400 16px/19px 'BarlowCondensed-Regular';
-    letter-spacing: 2px;
-    margin-right: 32px;
-}
-
-.destNavBarInactive{
-    color: white;
-    border-bottom: solid 3px white;
-}
-
-.destNavBarActive{
-    cursor: pointer;
-    border-bottom: solid 3px rgba(255, 255, 255, 0);
-    transition: border-bottom-color 0.5s ease-out,color 0.5s ease-out;
-    color: var(--lightBlue);
-}
-
-.destNavBarActive:hover{
-    border-bottom-color: rgba(255, 255, 255, 0.5);
-    color: white;
-}
-
 #destinationPlanetName{
     width: inherit;
     height: 110px;
