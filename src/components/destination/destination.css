@@ -4,13 +4,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: solid 1px green;
 }
 
 #destinationPic{
     width: 480px;
     height: 480px;
-    border: solid 1px red;
     margin: 0px 108px 0px 29px;
     background-size: contain;
     background-position: center;
@@ -21,38 +19,62 @@
 #destinationContent{
     width: 445px;
     height: 468px;
-    border: solid 1px red;
 }
 
 #destinationNavbar{
     width: inherit;
     height: 32px;
-    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.destNavBarButton{
+    height: 29px;
+    font: 400 16px/19px 'BarlowCondensed-Regular';
+    letter-spacing: 2px;
+    margin-right: 32px;
+}
+
+.destNavBarInactive{
+    color: white;
+    border-bottom: solid 3px white;
+}
+
+.destNavBarActive{
+    cursor: pointer;
+    border-bottom: solid 3px rgba(255, 255, 255, 0);
+    transition: border-bottom-color 0.5s ease-out,color 0.5s ease-out;
+    color: var(--lightBlue);
+}
+
+.destNavBarActive:hover{
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    color: white;
 }
 
 #destinationPlanetName{
     width: inherit;
     height: 110px;
     margin-top: 40px;
-    border: solid 1px red;
+    font: 400 96px/110px 'Bellefair-Regular';
 }
 
 #destinationMainText{
     width: inherit;
     height: 128px;
     margin-top: 16px;
-    border: solid 1px red;
 }
 
 #destinationData{
     width: inherit;
     height: 101px;
     margin-top: 40px;
-    border: solid 1px red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    border-top: solid 1px #979797;
 }
 
 #destinationData > div{
@@ -62,10 +84,21 @@
     flex-direction: column;
 }
 
+.destinationDataTitle{
+    height: 17px;
+    font: 400 14px/17px 'BarlowCondensed-Regular';
+    color: var(--lightBlue);
+}
+
+.destinationDataDetail{
+    height: 32px;
+    font: 400 28px/1 'Bellefair-Regular';
+    color: white;
+    margin-top: 12px;
+}
+
 #destinationDistance{
-    border: solid 1px red;
 }
 
 #destinationTime{
-    border: solid 1px red;
 }
