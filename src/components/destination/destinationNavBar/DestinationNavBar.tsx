@@ -1,7 +1,17 @@
 import { useState } from "react";
 import './destinationNavBar.css';
 
+//Contains the navigation bar for the destination section.
+
 const DestinationNavbar:React.FC = () =>{
+
+    interface TripPlan{
+        planetName:string,
+        tripDescription:string,
+        distance:string,
+        travelTime:string,
+        picPath:string
+    }
 
     interface LinksState {
         moonLinkState: string;
