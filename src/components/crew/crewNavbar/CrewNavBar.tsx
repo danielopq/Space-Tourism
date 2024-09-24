@@ -1,11 +1,22 @@
 import { useState } from 'react';
 import './crewNavBar.css';
 
-interface ButtonState {
-    [buttonRef: string]: string;
+interface ActiveProfiles {
+    DouglasHurleyActive: boolean;
+    MarkShuttleworthActive: boolean;
+    VictorGloverActive: boolean;
+    AnoushehAnsariActive: boolean;
 }
 
-const CrewNavBar: React.FC = () => {
+interface navBarProps {
+    setActiveProfile: (activeProfile: ActiveProfiles) => void;
+}
+
+interface ButtonState {
+    [buttonRef: string]: string,
+}
+
+const CrewNavBar: React.FC<navBarProps> = ({setActiveProfile}) => {
     const [buttonsState, setButtonsState] = useState<ButtonState>({
         DouglasHurleyBt: 'crewNavBarButton crewNavBarButtonInactive',
         MarkShuttleworthBt: 'crewNavBarButton crewNavBarButtonActive',
@@ -23,7 +34,15 @@ const CrewNavBar: React.FC = () => {
             AnoushehAnsariBt: 'crewNavBarButton crewNavBarButtonActive',
         }
 
-        setButtonsState({...newButtonState,[`${crewMember}Bt`]:'crewNavBarButton crewNavBarButtonInactive'})
+        let newActiveProfiles = {
+            DouglasHurleyActive: false,
+            MarkShuttleworthActive: false,
+            VictorGloverActive: false,
+            AnoushehAnsariActive: false,
+        }
+
+        setButtonsState({ ...newButtonState, [`${crewMember}Bt`]: 'crewNavBarButton crewNavBarButtonInactive' });
+        setActiveProfile({...newActiveProfiles,[`${crewMember}Active`]:true});
     }
 
     return (

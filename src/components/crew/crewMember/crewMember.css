@@ -23,7 +23,6 @@
 
 .crewName{
     width: inherit;
-    height: 64px;
     margin-top: 16px;
     color: white;
     font: 400 56px/64px 'Bellefair-Regular';
@@ -36,7 +35,7 @@
 
 .crewPicture {
     background-size: 500px;
-    background-position: right;
+    background-position: 100% 100%;
     background-repeat: no-repeat;
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.1) 40px,rgba(0, 0, 0, 1) 80px);
 }
