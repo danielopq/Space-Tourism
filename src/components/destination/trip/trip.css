@@ -6,6 +6,8 @@
   flex-direction: row;
   align-items: center;
   margin-top: 58px;
+  transition: opacity 0.5s ease-out;
+  opacity: 1;
 }
 
 .destinationPic {
