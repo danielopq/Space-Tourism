@@ -1,0 +1,30 @@
+#crewNavbar{
+    width: 180px;
+    height: 15px;
+    z-index: 100;
+    position: absolute;
+    margin-top: 729px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.crewNavBarButton{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in;
+}
+
+.crewNavBarButtonActive{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.17);
+}
+
+.crewNavBarButtonActive:Hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.crewNavBarButtonInactive{
+    background-color: white;
+}

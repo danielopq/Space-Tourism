@@ -1,9 +1,10 @@
 import crewData from './crewData/crewData';
-import CrewMember from './crewMenber/crewMember';
+import CrewMember from './crewMember/CrewMember';
+import CrewNavBar from './crewNavbar/CrewNavBar';
 
 const Crew: React.FC = () => {
 
-    const {name,rank,description,picPath} = crewData.DouglasHurley;
+    const { name, rank, description, picPath } = crewData.DouglasHurley;
 
     return (
         <div id="crew" className='sectionFrame'>
@@ -11,7 +12,8 @@ const Crew: React.FC = () => {
                 <span className='sectionNumber'>02 </span>
                 <span className='sectionTitle'>MEET YOUR CREW</span>
             </div>
-            <CrewMember name={name} rank={rank} description={description} picPath={picPath}/>
+            <CrewNavBar />
+            <CrewMember name={name} rank={rank} description={description} picPath={picPath} />
         </div>
     )
 }
