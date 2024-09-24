@@ -12,10 +12,10 @@ const Crew: React.FC = () => {
                 <span className='sectionTitle'>MEET YOUR CREW</span>
             </div>
             <div className="crewMain">
-                <div className='crewDescription'>
-                    <p className='crewName'>{name}</p>
+                <div className='crewIntroduction'>
                     <p className='crewRank'>{rank}</p>
-                    <p className='crewDescription'>{description}</p>
+                    <p className='crewName'>{name}</p>
+                    <p className='crewDescription mainText'>{description}</p>
                 </div>
                 <div className='crewPicture' style={{backgroundImage: `url(${picPath})`}}></div>
             </div>

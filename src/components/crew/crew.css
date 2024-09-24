@@ -9,14 +9,35 @@
 }
 
 .crewMain>div {
-    width: 534px;
+    width: 539px;
     height: 734px;
     border: solid 1px pink;
 }
 
+.crewRank{
+    width: inherit;
+    height: 37px;
+    margin-top: 197px;
+    color: rgba(255,255,255,0.5);
+    font: 400 32px/37px 'Bellefair-Regular';
+}
+
+.crewName{
+    width: inherit;
+    height: 64px;
+    margin-top: 16px;
+    color: white;
+    font: 400 56px/64px 'Bellefair-Regular';
+}
+
+.crewDescription{
+    width: inherit;
+    margin-top: 24px;
+}
+
 .crewPicture {
-    background-size: 539px 676px;
-    background-position: center;
+    background-size: 500px;
+    background-position: right;
     background-repeat: no-repeat;
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.1) 40px,rgba(0, 0, 0, 1) 80px);
 }
