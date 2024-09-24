@@ -80,7 +80,6 @@ main{
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 48px;
-    border: solid 1px red;
 }
 /*Defines section header size and margins*/
 .sectionHeader{

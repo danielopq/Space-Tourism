@@ -1,5 +1,20 @@
-#crewMain{
+.crewMain{
     width: inherit;
-    height: 734px;
+    height: inherit;
+    margin-top: 24px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
     border: solid 1px green;
+}
+
+.crewMain > div{
+    width: 534px;
+    height: 734px;
+    border: solid 1px pink;
+}
+
+.crewPicture{
+    width: 534px;
+    height: inherit;
 }
