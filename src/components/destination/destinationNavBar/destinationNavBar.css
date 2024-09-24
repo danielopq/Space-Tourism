@@ -1,9 +1,13 @@
 #destinationNavbar{
+    position: absolute;
     width: inherit;
     height: 32px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    z-index: 100;
+    margin-top: 191px;
+    margin-left: 618px;
 }
 
 .destNavBarButton{

@@ -1,23 +1,18 @@
 import { useState } from "react";
-import destinationData from "../destinationData/destInationData";
 import './destinationNavBar.css';
 
-
-interface TripPlan {
-    planetName: string,
-    tripDescription: string,
-    distance: string,
-    travelTime: string,
-    picPath: string
+interface ActivesSection {
+    moonActive: boolean;
+    marsActive: boolean;
+    europaActive: boolean;
+    titanActive: boolean;
 }
 
 interface navBarProps {
-    setTriplan: (tripPlan: TripPlan) => void;
+    setPlansActive: (activeSections: ActivesSection) => void;
 }
 
-const DestinationNavbar:React.FC<navBarProps> = ({setTriplan}) =>{
-
-    const { moon, mars, europa,titan } = destinationData;
+const DestinationNavbar: React.FC<navBarProps> = ({ setPlansActive }) => {
 
     interface LinksState {
         moonLinkState: string;
@@ -44,23 +39,16 @@ const DestinationNavbar:React.FC<navBarProps> = ({setTriplan}) =>{
             europaLinkState: 'destNavBarButton destNavBarActive',
             titanLinkState: 'destNavBarButton destNavBarActive',
         }
-       
-        setLinkState({...newLinksState,[`${section}LinkState`]:'destNavBarButton destNavBarInactive'})
 
-        switch (section){
-            case 'moon':
-                setTriplan(moon);
-                break;
-            case 'mars':
-                setTriplan(mars);
-                break;
-            case 'europa':
-                setTriplan(europa);
-                break;
-            case 'titan':
-                setTriplan(titan);
-                break;
+        let newPlansActive: ActivesSection = {
+            moonActive: false,
+            marsActive: false,
+            europaActive: false,
+            titanActive: false,
         }
+
+        setLinkState({ ...newLinksState, [`${section}LinkState`]: 'destNavBarButton destNavBarInactive' });
+        setPlansActive({...newPlansActive,[`${section}Active`]:true})
     }
 
     return (

@@ -1,0 +1,99 @@
+.destinationMain {
+  position: absolute;
+  width: inherit;
+  height: 734px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 58px;
+}
+
+.destinationPic {
+  width: 480px;
+  height: 480px;
+  margin: 0px 108px 0px 29px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.destinationContent {
+  width: 445px;
+  height: 468px;
+
+}
+
+.destinationPlanetName {
+  width: inherit;
+  height: 110px;
+  margin-top: 72px;
+  font: 400 96px/110px 'Bellefair-Regular';
+}
+
+.destinationMainText {
+  width: inherit;
+  height: 128px;
+  margin-top: 16px;
+}
+
+.destinationData {
+  width: inherit;
+  height: 101px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: solid 1px #979797;
+}
+
+.destinationData>div {
+  width: 210px;
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+}
+
+.destinationDataTitle {
+  height: 17px;
+  font: 400 14px/17px 'BarlowCondensed-Regular';
+  color: var(--lightBlue);
+}
+
+.destinationDataDetail {
+  height: 32px;
+  font: 400 28px/1 'Bellefair-Regular';
+  color: white;
+  margin-top: 12px;
+}
+
+.fade-out {
+  animation: fadeOut 0.1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.1s ease-in;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

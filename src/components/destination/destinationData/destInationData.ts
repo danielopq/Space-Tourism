@@ -8,7 +8,7 @@ interface TripPlan {
     tripDescription: string,
     distance: string,
     travelTime: string,
-    picPath: string
+    picPath: string,
 }
 
 interface Trips {
