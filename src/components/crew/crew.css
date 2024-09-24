@@ -1,20 +1,22 @@
-.crewMain{
+.crewMain {
     width: inherit;
     height: inherit;
     margin-top: 24px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: solid 1px green;
 }
 
-.crewMain > div{
+.crewMain>div {
     width: 534px;
     height: 734px;
     border: solid 1px pink;
 }
 
-.crewPicture{
-    width: 534px;
-    height: inherit;
+.crewPicture {
+    background-size: 539px 676px;
+    background-position: center;
+    background-repeat: no-repeat;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.1) 40px,rgba(0, 0, 0, 1) 80px);
 }

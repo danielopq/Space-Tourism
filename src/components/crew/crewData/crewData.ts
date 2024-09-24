@@ -15,7 +15,7 @@ interface CrewList{
     [crewMenber:string]:Profile
 }
 
-const CrewData:CrewList = {
+const crewData:CrewList = {
     DouglasHurley:{
             name:'DOUGLAS HURLEY',
             rank:'COMMANDER',
@@ -41,4 +41,4 @@ const CrewData:CrewList = {
         picPath: anoushehPic,
     },
 }
-export default CrewData;
+export default crewData;
