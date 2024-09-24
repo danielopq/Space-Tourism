@@ -1,5 +1,5 @@
-import './crew.css'
 import crewData from './crewData/crewData';
+import CrewMember from './crewMenber/crewMember';
 
 const Crew: React.FC = () => {
 
@@ -11,14 +11,7 @@ const Crew: React.FC = () => {
                 <span className='sectionNumber'>02 </span>
                 <span className='sectionTitle'>MEET YOUR CREW</span>
             </div>
-            <div className="crewMain">
-                <div className='crewIntroduction'>
-                    <p className='crewRank'>{rank}</p>
-                    <p className='crewName'>{name}</p>
-                    <p className='crewDescription mainText'>{description}</p>
-                </div>
-                <div className='crewPicture' style={{backgroundImage: `url(${picPath})`}}></div>
-            </div>
+            <CrewMember name={name} rank={rank} description={description} picPath={picPath}/>
         </div>
     )
 }
