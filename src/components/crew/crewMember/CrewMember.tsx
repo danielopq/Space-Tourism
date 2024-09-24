@@ -11,16 +11,17 @@ interface Profile{
 interface CrewMemberProps{
     activeProfile:boolean;
     crewMenberProfile:Profile,
+    index:number,
 }
 
-const CrewMember: React.FC<CrewMemberProps> = ({activeProfile,crewMenberProfile}) => {
+const CrewMember: React.FC<CrewMemberProps> = ({activeProfile,crewMenberProfile,index}) => {
     const { name, rank, description, picPath } = crewMenberProfile;
     const [crewMemberOpacity,setCrewMemberOpacity] = useState<number>(0);
     useEffect(()=>{ 
         setCrewMemberOpacity(activeProfile ? 1 : 0);
     },[activeProfile]);
     return (
-        <div className="crewMain" style={{opacity:`${crewMemberOpacity}`}}>
+        <div className="crewMain" style={{zIndex:`${index}`,opacity:`${crewMemberOpacity}`}}>
             <div className='crewIntroduction'>
                 <p className='crewRank'>{rank}</p>
                 <p className='crewName'>{name}</p>

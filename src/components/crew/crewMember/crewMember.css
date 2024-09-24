@@ -1,17 +1,16 @@
 .crewMain {
     width: inherit;
     height: inherit;
-    margin-top: 24px;
+    margin-top: 58px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 1px green;
+    position:absolute;
 }
 
 .crewMain>div {
     width: 539px;
     height: 734px;
-    border: solid 1px pink;
 }
 
 .crewRank{

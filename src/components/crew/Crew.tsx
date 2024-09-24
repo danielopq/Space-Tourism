@@ -14,10 +14,10 @@ const Crew: React.FC = () => {
                 <span className='sectionTitle'>MEET YOUR CREW</span>
             </div>
             <CrewNavBar />
-            <CrewMember crewMenberProfile={DouglasHurley} activeProfile={true} />
-            <CrewMember crewMenberProfile={MarkShuttleworth} activeProfile={false} />
-            <CrewMember crewMenberProfile={VictorGlover} activeProfile={false} />
-            <CrewMember crewMenberProfile={AnoushehAnsari} activeProfile={false} />
+            <CrewMember crewMenberProfile={DouglasHurley} activeProfile={true} index={1} />
+            <CrewMember crewMenberProfile={MarkShuttleworth} activeProfile={false} index={2} />
+            <CrewMember crewMenberProfile={VictorGlover} activeProfile={false} index={3} />
+            <CrewMember crewMenberProfile={AnoushehAnsari} activeProfile={false} index={4} />
         </div>
     )
 }
