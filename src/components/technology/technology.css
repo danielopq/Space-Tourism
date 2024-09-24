@@ -1,5 +1,38 @@
 #technologyMain{
-    width: inherit;
+    width: 1275px;
     height: 734px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     border: solid 1px green;
+}
+
+#technologyMain > div{
+    height: 600px;
+    margin-top: 67px;
+    padding: 148px 0px 0px 144px;
+    border:solid 1px red
+}
+
+.technologyMainText{
+    width: 635px;
+}
+
+.technologyHeader{
+    height: 37px;
+    border:solid 1px red
+}
+
+.technologyTerm{
+    margin-top: 16px;
+    border:solid 1px red
+}
+
+.technologyDescription{
+    margin-top: 24px;
+    border:solid 1px red
+}
+
+.technologyPic{
+    width: 608px;
 }
