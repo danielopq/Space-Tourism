@@ -1,4 +1,4 @@
-#technologyMain{
+.technologyMain{
     width: 1275px;
     height: 734px;
     display: flex;
@@ -7,7 +7,7 @@
     border: solid 1px green;
 }
 
-#technologyMain > div{
+.technologyMain > div{
     height: 600px;
     margin-top: 67px;
     border:solid 1px red
@@ -39,4 +39,8 @@
 
 .technologyPic{
     width: 608px;
+    height: 600px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
