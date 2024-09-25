@@ -65,12 +65,74 @@
 }
 
 
-.sectionNumber{
-    font: 700 16px/96px 'BarlowCondensed-Regular';
+.sectionNumberDeco{
+    font: 700 16px/93px 'BarlowCondensed-Bold';
     letter-spacing: 2.7px;
 }
 
 .sectionName{
-    font: 400 16px/96px 'BarlowCondensed-Regular';
+    font: 400 16px/93px 'BarlowCondensed-Regular';
     letter-spacing: 2px;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #mainNavBar{
+        width: 100vw;
+        align-items: flex-start;
+    }
+
+    #navBarLeft{
+        width: 128px;
+        padding: 0px 39px;
+        margin-right: 0px;
+    }
+    
+    #navBarline{
+        display: none;
+    }
+    
+    #navBarRight{
+        width: 100%;
+        padding: 0px 0px 0px 90px;
+        justify-content: flex-start;
+    }
+    
+    .navbarSectionLink{
+        margin: 0px 48px 0px 0px;
+    }
+    
+    .active {
+        cursor: pointer;
+        border-bottom: solid 3px rgba(255, 255, 255, 0);
+        transition: border-bottom-color 0.75s ease-out;
+    }
+    
+    .active:hover {
+        border-bottom-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .inactive{
+        cursor: default;
+        border-bottom: solid 3px white;
+    }
+    
+    
+    .sectionNumber{
+        font: 700 16px/96px 'BarlowCondensed-Regular';
+        letter-spacing: 2.7px;
+    }
+    
+    .sectionName{
+        font: 400 16px/96px 'BarlowCondensed-Regular';
+        letter-spacing: 2px;
+    }
+}
+
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    
 }

@@ -62,19 +62,19 @@ const NavBar: React.FC<NavBarProps> = ({currentSection}) => {
             </div>
             <div id="navBarRight">
                 <div className={homeLinkState} onClick={() => handleClick("home")}>
-                    <span className='sectionNumber'>00</span>
+                    <span className='sectionNumberDeco'>00</span>
                     <span className='sectionName'> HOME</span>
                 </div>
                 <div className={destinationLinkState} onClick={() => handleClick("destination")}>
-                    <span className='sectionNumber'>01</span>
+                    <span className='sectionNumberDeco'>01</span>
                     <span className='sectionName'> DESTINATION</span>
                 </div>
                 <div className={crewLinkState} onClick={() => handleClick("crew")}>
-                    <span className='sectionNumber'>02</span>
+                    <span className='sectionNumberDeco'>02</span>
                     <span className='sectionName'> CREW</span>
                 </div>
                 <div className={technologyLinkState} onClick={() => handleClick("technology")}>
-                    <span className='sectionNumber'>03</span>
+                    <span className='sectionNumberDeco'>03</span>
                     <span className='sectionName'> TECHNOLOGY</span>
                 </div>
             </div>
