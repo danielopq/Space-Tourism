@@ -1,0 +1,35 @@
+#technologyNavBar{
+    width: 80px;
+    height: 304px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 273px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.techNavBarBt{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font: 400 32px/80px 'Bellefair-Regular';
+    text-align: center;
+    transition: border-color 0.4s ease-in ;
+}
+
+.techNavBarBt-active{
+    cursor:default;
+    background-color: white;
+    color: #0B0D17;
+}
+
+.techNavBarBt-inactive{
+    cursor: pointer;
+    border: solid 1px rgba(255,255,255,0.25);
+    color: white;
+}
+
+.techNavBarBt-inactive:hover{
+    border-color: white;
+}
