@@ -114,7 +114,27 @@ main{
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .sectionFrame{
+        width: 688px;
+        height: auto;
+        margin-top: 40px;
+    }
 
+    .sectionHeader{
+        height: 24px;
+    }
+
+    .sectionNumber{
+        font: 700 20px/24px 'BarlowCondensed-Bold';
+    }
+        
+    .sectionTitle{
+        font: 400 20px/24px 'BarlowCondensed-Regular';
+    }
+
+    .mainText{
+        font: 400 16px/31px 'Barlow-Regular';
+    }
 }
 
 

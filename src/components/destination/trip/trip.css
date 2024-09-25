@@ -69,33 +69,53 @@
   margin-top: 12px;
 }
 
-.fade-out {
-  animation: fadeOut 0.1s ease-in;
-  animation-fill-mode: forwards;
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .destinationMain {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    text-align: center;
+    border: solid 1px green;
+  }
+  
+  .destinationPic {
+    width: 300px;
+    height: 300px;
+    margin: 42px;
+  }
+  
+  .destinationContent {
+    width: 514px;
+    height: 521px;
+    border: solid 1px blue;
+  }
+  
+  .destinationPlanetName {
+    height: 92px;
+    margin-top: 132px;
+    font: 400 56px/92px 'Bellefair-Regular';
+  }
+  
+  .destinationMainText {
+    height: 87px;
+  }
+  
+  .destinationData {
+    height: 85px;
+    margin-top: 24px;
+  }
+  
+  .destinationData>div {
+    width: 245px;
+  }
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
 
-  to {
-    opacity: 0;
-  }
-}
+/*############################## MOBILE VERSION ##############################*/
 
-.fade-in {
-  animation: fadeIn 0.1s ease-in;
-  animation-fill-mode: forwards;
-
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+@media screen and (max-width:767px) {
+    
 }
