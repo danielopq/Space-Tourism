@@ -51,15 +51,16 @@
 
 .active {
     cursor: pointer;
-    border-bottom: solid 3px rgba(255, 255, 255, 0); /* El borde comienza invisible */
-    transition: border-bottom-color 0.75s ease-out; /* Solo animamos el color del borde */
+    border-bottom: solid 3px rgba(255, 255, 255, 0);
+    transition: border-bottom-color 0.75s ease-out;
 }
 
 .active:hover {
-    border-bottom-color: rgba(255, 255, 255, 0.5); /* Al hacer hover, el color aparece */
+    border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
 .inactive{
+    cursor: default;
     border-bottom: solid 3px white;
 }
 
