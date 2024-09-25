@@ -1,7 +1,8 @@
+import { useEffect, useState } from 'react';
+import './technology.css';
 import TerminologyCard from './terminologyCard/TerminologyCard';
 import technologyData from './technologyData/technologyData';
 import TechnologyNavBar from './technologyNavBar/TechnologyNavBar';
-import { useEffect, useState } from 'react';
 
 interface ActiveItems {
     launchVehicleActive: boolean;

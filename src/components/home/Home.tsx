@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import './home.css'
 import { useEffect } from 'react';
+import './home.css'
 
 //Home page
 

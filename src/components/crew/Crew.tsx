@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './crew.css';
 import crewData from './crewData/crewData';
 import CrewMember from './crewMember/CrewMember';
 import CrewNavBar from './crewNavbar/CrewNavBar';

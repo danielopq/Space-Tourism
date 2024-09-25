@@ -1,0 +1,4 @@
+#crew{
+     opacity: 0;
+     animation: fadeIn 0.7s ease-in forwards;
+}

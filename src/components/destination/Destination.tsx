@@ -1,8 +1,8 @@
+import { useEffect, useState } from 'react';
+import './destination.css'
 import DestinationNavbar from './destinationNavBar/DestinationNavBar';
 import Trip from './trip/Trip';
 import destinationData from './destinationData/destInationData';
-import './destination.css'
-import { useEffect, useState } from 'react';
 
 interface ActivesSection {
     moonActive: boolean;
