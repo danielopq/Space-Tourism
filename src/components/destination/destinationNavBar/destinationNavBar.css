@@ -18,6 +18,7 @@
 }
 
 .destNavBarInactive{
+    cursor: default;
     color: white;
     border-bottom: solid 3px white;
 }
