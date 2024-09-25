@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import crewData from './crewData/crewData';
 import CrewMember from './crewMember/CrewMember';
 import CrewNavBar from './crewNavbar/CrewNavBar';
@@ -10,7 +10,15 @@ interface ActiveProfiles{
     AnoushehAnsariActive: boolean;
 }
 
-const Crew: React.FC = () => {
+interface CrewProps{
+    changeBackgroundPic: (section:string)=>void;
+}
+
+const Crew: React.FC<CrewProps> = ({changeBackgroundPic}) => {
+
+    useEffect(()=>{
+        changeBackgroundPic('crew');
+    },[]);
 
     const {DouglasHurley,MarkShuttleworth,VictorGlover,AnoushehAnsari,} = crewData;
 

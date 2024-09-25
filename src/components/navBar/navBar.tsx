@@ -10,7 +10,7 @@ type NavBarProps = {
  * Contains the main navigation bar. It remains visible at all times.
  * @returns {React.FC} - Navigation bar
  */
-const NavBar: React.FC<NavBarProps> = ({ changeBackgroundPic }) => {
+const NavBar: React.FC = () => {
     interface LinkState {
         homeLinkState: string;
         destinationLinkState: string;
@@ -44,7 +44,6 @@ const NavBar: React.FC<NavBarProps> = ({ changeBackgroundPic }) => {
         //If the link is active displays the corresponding section.
         if (linkState[`${section}LinkState` as keyof LinkState] != 'navbarSectionLink inactive') {
             section === "home" ? navigate('/') : navigate(`/${section}`);
-            changeBackgroundPic(section);
         }
         setLinkState({ ...newState, [`${section}LinkState`]: 'navbarSectionLink inactive' });
     }

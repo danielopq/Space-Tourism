@@ -2,7 +2,7 @@ import DestinationNavbar from './destinationNavBar/DestinationNavBar';
 import Trip from './trip/Trip';
 import destinationData from './destinationData/destInationData';
 import './destination.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface ActivesSection {
     moonActive: boolean;
@@ -11,7 +11,17 @@ interface ActivesSection {
     titanActive: boolean;
 }
 
-const Destination: React.FC = () => {
+interface DestinationProps{
+    changeBackgroundPic: (section:string)=>void;
+}
+
+
+const Destination: React.FC<DestinationProps> = ({changeBackgroundPic}) => {
+
+    useEffect(()=>{
+        changeBackgroundPic('destination');
+    },[]);
+
     const { moon, mars, europa, titan } = destinationData;
 
     const [plansActive, setPlansActive] = useState<ActivesSection>({

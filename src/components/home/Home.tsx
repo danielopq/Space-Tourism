@@ -1,8 +1,25 @@
+import { useNavigate } from 'react-router-dom';
 import './home.css'
+import { useEffect } from 'react';
 
 //Home page
 
-const Home:React.FC = () => {
+interface HomeProps{
+    changeBackgroundPic: (section:string)=>void;
+}
+
+const Home:React.FC<HomeProps> = ({changeBackgroundPic}) => {
+
+    useEffect(()=>{
+        changeBackgroundPic('home');
+    },[]);
+    
+    const navigate = useNavigate();
+
+    const handleClick = ()=>{
+        navigate('/destination');
+    }
+
     return (
         <div id="home">
                 <div id="homeText">
@@ -14,7 +31,7 @@ const Home:React.FC = () => {
                           world experience!
                     </p>
                 </div>
-                <button id="homeExploreBt">EXPLORE</button>
+                <button id="homeExploreBt" onClick={handleClick}>EXPLORE</button>
             </div>
     )
 }

@@ -7,22 +7,22 @@ import Crew from "./components/crew/Crew";
 import Technology from "./components/technology/Technology";
 import { useState } from "react";
 
-const SpaceTourismApp:React.FC = () => {
+const SpaceTourismApp: React.FC = () => {
 
-    const [backGroundPic,setBackGroundPic] = useState<string>("homeBackGround");
+    const [backGroundPic, setBackGroundPic] = useState<string>("homeBackGround");
 
-    const changeBackgroundPic = (section:string)=>{
+    const changeBackgroundPic = (section: string) => {
         setBackGroundPic(`${section}BackGround`);
     }
 
     return (
         <main className={backGroundPic}>
-            <NavBar changeBackgroundPic={changeBackgroundPic}/>
+            <NavBar />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/destination" element={<Destination />} />
-                <Route path="/crew" element={<Crew />} />
-                <Route path="/technology" element={<Technology />} />
+                <Route path="/" element={<Home changeBackgroundPic={changeBackgroundPic} />} />
+                <Route path="/destination" element={<Destination changeBackgroundPic={changeBackgroundPic} />} />
+                <Route path="/crew" element={<Crew changeBackgroundPic={changeBackgroundPic}/>} />
+                <Route path="/technology" element={<Technology changeBackgroundPic={changeBackgroundPic} />} />
             </Routes>
         </main>
 

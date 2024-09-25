@@ -1,7 +1,7 @@
 import TerminologyCard from './terminologyCard/TerminologyCard';
 import technologyData from './technologyData/technologyData';
 import TechnologyNavBar from './technologyNavBar/TechnologyNavBar';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface ActiveItems {
     launchVehicleActive: boolean;
@@ -9,7 +9,15 @@ interface ActiveItems {
     spaceCapsuleActive: boolean;
 }
 
-const Technology: React.FC = () => {
+interface TechnologyProps{
+    changeBackgroundPic: (section:string)=>void;
+}
+
+const Technology: React.FC<TechnologyProps> = ({changeBackgroundPic}) => {
+
+    useEffect(()=>{
+        changeBackgroundPic('technology');
+    },[]);
 
     const { launchVehicle, spacePort, spaceCapsule } = technologyData;
 
