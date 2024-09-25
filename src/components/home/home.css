@@ -28,7 +28,7 @@
 #homeText h1 {
     width: inherit;
     height: 165px;
-    font: 400 144px/165px 'Bellefair-Regular';
+    font: 400 150px/165px 'Bellefair-Regular';
 }
 
 #homeTextMain{
@@ -52,4 +52,34 @@
 #homeExploreBt:hover {
     box-shadow: 0 0 0 88px rgba(255,255,255,0.1);
     color: rgba(11,13,23,0.5)
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #home {
+        width: 688px;
+        height: 672px;
+        margin:128px 0px 0px;
+        padding-top: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #homeText {
+        width: 560px;
+        height: 334px;
+    }
+
+    #homeTextMain{
+        height: 87px;
+    }
+    
+}
+
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    
 }
