@@ -1,19 +1,9 @@
 import TerminologyCard from './terminologyCard/TerminologyCard';
 import technologyData from './technologyData/technologyData';
 
-interface Item{
-    itemName: string,
-    description:string,
-    picPath:string,
-}
-
-interface ItemsList{
-    [item:string]:Item;
-}
-
 const Technology: React.FC = () => {
 
-    const {launchVehicle,spacePort,spaceCapsule} = technologyData;
+    const { launchVehicle, spacePort, spaceCapsule } = technologyData;
 
     return (
         <div id="technology" className='sectionFrame'>
@@ -21,7 +11,9 @@ const Technology: React.FC = () => {
                 <span className='sectionNumber'>03 </span>
                 <span className='sectionTitle'>SPACE LAUNCH 101</span>
             </div>
-            <TerminologyCard item={launchVehicle} active={true} index={1}/>
+            <TerminologyCard item={launchVehicle} active={true} index={1} />
+            <TerminologyCard item={spacePort} active={false} index={2} />
+            <TerminologyCard item={spaceCapsule} active={false} index={3} />
         </div>
     )
 }
