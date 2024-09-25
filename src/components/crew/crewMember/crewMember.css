@@ -6,6 +6,8 @@
     flex-direction: row;
     justify-content: space-between;
     position:absolute;
+    transition: opacity 0.5s ease-out;
+    opacity: 1;
 }
 
 .crewMain>div {
