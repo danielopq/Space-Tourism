@@ -20,7 +20,13 @@ interface LinkState {
 const NavBar: React.FC<NavBarProps> = ({currentSection}) => {
 
     useEffect(()=>{
-        handleClick(currentSection);
+        let newState: LinkState = {
+            homeLinkState: 'navbarSectionLink active',
+            destinationLinkState: 'navbarSectionLink active',
+            crewLinkState: 'navbarSectionLink active',
+            technologyLinkState: 'navbarSectionLink active',
+        }
+        setLinkState({ ...newState, [`${currentSection}LinkState`]: 'navbarSectionLink inactive' });
     },[currentSection]);
 
     const navigate = useNavigate();
@@ -40,17 +46,12 @@ const NavBar: React.FC<NavBarProps> = ({currentSection}) => {
      * @param {string} section - Section name
      */
     const handleClick = (section: string): void => {
-        let newState: LinkState = {
-            homeLinkState: 'navbarSectionLink active',
-            destinationLinkState: 'navbarSectionLink active',
-            crewLinkState: 'navbarSectionLink active',
-            technologyLinkState: 'navbarSectionLink active',
-        }
+
         //If the link is active displays the corresponding section.
         if (linkState[`${section}LinkState` as keyof LinkState] != 'navbarSectionLink inactive') {
             section === "home" ? navigate('/') : navigate(`/${section}`);
         }
-        setLinkState({ ...newState, [`${section}LinkState`]: 'navbarSectionLink inactive' });
+        
     }
 
     return (
