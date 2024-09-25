@@ -4,37 +4,37 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: absolute;
+    margin-top: 58px;
     border: solid 1px green;
 }
 
 .technologyMain > div{
     height: 600px;
     margin-top: 67px;
-    border:solid 1px red
 }
 
 .technologyMainText{
     width: 635px;
     padding: 148px 0px 0px 144px;
+    border: solid 1px red;
 }
 
 .technologyHeader{
     height: 37px;
     font: 400 32px/37px 'Bellefair-Regular';
     color: rgba(255,255,255,0.5);
-    border:solid 1px red
+    border: solid 1px red;
 }
 
-.technologyTerm{
+.technologyItem{
     margin-top: 16px;
     font: 400 56px/64px 'Bellefair-Regular';
     color: white;
-    border:solid 1px red
 }
 
 .technologyDescription{
     margin-top: 24px;
-    border:solid 1px red
 }
 
 .technologyPic{
