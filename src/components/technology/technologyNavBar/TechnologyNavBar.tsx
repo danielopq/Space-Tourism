@@ -1,36 +1,55 @@
 import { useState } from 'react';
 import './TechnologyNavBar.css';
 
-const TechnologyNavBar: React.FC = () => {
+interface ActiveItems {
+    launchVehicleActive: boolean;
+    spacePortActive: boolean;
+    spaceCapsuleActive: boolean;
+}
+
+interface TechNavBarProps {
+    setItemsActive: (activeItems: ActiveItems) => void;
+}
+
+const TechnologyNavBar: React.FC<TechNavBarProps> = ({ setItemsActive }) => {
 
     interface ButtonsState {
-        launchVehicleState: string;
-        spacePortState: string;
-        spaceCapsuleState: string;
+        launchVehicleBtState: string;
+        spacePortBtState: string;
+        spaceCapsuleBtState: string;
     }
 
     const [buttonsState, setButtonsState] = useState<ButtonsState>({
-        launchVehicleState: 'techNavBarBt techNavBarBt-active',
-        spacePortState: 'techNavBarBt techNavBarBt-inactive',
-        spaceCapsuleState: 'techNavBarBt techNavBarBt-inactive',
+        launchVehicleBtState: 'techNavBarBt techNavBarBt-active',
+        spacePortBtState: 'techNavBarBt techNavBarBt-inactive',
+        spaceCapsuleBtState: 'techNavBarBt techNavBarBt-inactive',
     });
-    const { launchVehicleState, spacePortState, spaceCapsuleState } = buttonsState;
 
-    const handleClick = (itemName: string):void => {
-        let newButtonsState:ButtonsState={
-            launchVehicleState: 'techNavBarBt techNavBarBt-inactive',
-            spacePortState: 'techNavBarBt techNavBarBt-inactive',
-            spaceCapsuleState: 'techNavBarBt techNavBarBt-inactive',
+    const { launchVehicleBtState, spacePortBtState, spaceCapsuleBtState } = buttonsState;
+
+    const handleClick = (itemName: string): void => {
+        let newButtonsState: ButtonsState = {
+            launchVehicleBtState: 'techNavBarBt techNavBarBt-inactive',
+            spacePortBtState: 'techNavBarBt techNavBarBt-inactive',
+            spaceCapsuleBtState: 'techNavBarBt techNavBarBt-inactive',
         }
 
-        setButtonsState({...newButtonsState,[`${itemName}State`]:'techNavBarBt techNavBarBt-active'});
+        let newActiveItems: ActiveItems = {
+            launchVehicleActive: false,
+            spacePortActive: false,
+            spaceCapsuleActive: false,
+        }
+
+        setItemsActive({...newActiveItems,[`${itemName}Active`]:true});
+        setButtonsState({ ...newButtonsState, [`${itemName}BtState`]: 'techNavBarBt techNavBarBt-active' });
+        
     }
 
     return (
         <nav id="technologyNavBar">
-            <div className={launchVehicleState} onClick={() => handleClick('launchVehicle')}>1</div>
-            <div className={spacePortState} onClick={() => handleClick('spacePort')}>2</div>
-            <div className={spaceCapsuleState} onClick={() => handleClick('spaceCapsule')}>3</div>
+            <div className={launchVehicleBtState} onClick={() => handleClick('launchVehicle')}>1</div>
+            <div className={spacePortBtState} onClick={() => handleClick('spacePort')}>2</div>
+            <div className={spaceCapsuleBtState} onClick={() => handleClick('spaceCapsule')}>3</div>
         </nav>
     )
 }

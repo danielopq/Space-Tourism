@@ -1,10 +1,25 @@
 import TerminologyCard from './terminologyCard/TerminologyCard';
 import technologyData from './technologyData/technologyData';
 import TechnologyNavBar from './technologyNavBar/TechnologyNavBar';
+import { useState } from 'react';
+
+interface ActiveItems {
+    launchVehicleActive: boolean;
+    spacePortActive: boolean;
+    spaceCapsuleActive: boolean;
+}
 
 const Technology: React.FC = () => {
 
     const { launchVehicle, spacePort, spaceCapsule } = technologyData;
+
+    const [activeItems, setActiveItems] = useState<ActiveItems>({
+        launchVehicleActive: true,
+        spacePortActive: false,
+        spaceCapsuleActive: false,
+    })
+
+    const {launchVehicleActive,spacePortActive,spaceCapsuleActive,} = activeItems
 
     return (
         <div id="technology" className='sectionFrame'>
@@ -12,10 +27,10 @@ const Technology: React.FC = () => {
                 <span className='sectionNumber'>03 </span>
                 <span className='sectionTitle'>SPACE LAUNCH 101</span>
             </div>
-            <TechnologyNavBar />
-            <TerminologyCard item={launchVehicle} active={true} index={1} />
-            <TerminologyCard item={spacePort} active={false} index={2} />
-            <TerminologyCard item={spaceCapsule} active={false} index={3} />
+            <TechnologyNavBar setItemsActive={setActiveItems}/>
+            <TerminologyCard item={launchVehicle} active={launchVehicleActive} index={1} />
+            <TerminologyCard item={spacePort} active={spacePortActive} index={2} />
+            <TerminologyCard item={spaceCapsule} active={spaceCapsuleActive} index={3} />
         </div>
     )
 }
