@@ -15,7 +15,7 @@
     border-radius: 50%;
     font: 400 32px/80px 'Bellefair-Regular';
     text-align: center;
-    border-color: transparent;
+    border: solid 1px transparent;
     transition: border-color 0.4s ease-in,color 0.4s ease-in,background-color 0.4s ease-in ;
 }
 

@@ -80,13 +80,11 @@ main{
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 48px;
-    border: solid 1px pink;
 }
 /*Defines section header size and margins*/
 .sectionHeader{
     height: 34px;
     width: 100%;
-    border: solid 1px blue;
 }
 
 /*Defines the section number font style*/
