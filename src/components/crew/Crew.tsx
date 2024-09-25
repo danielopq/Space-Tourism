@@ -11,13 +11,13 @@ interface ActiveProfiles{
 }
 
 interface CrewProps{
-    changeBackgroundPic: (section:string)=>void;
+    changeSection: (section:string)=>void;
 }
 
-const Crew: React.FC<CrewProps> = ({changeBackgroundPic}) => {
+const Crew: React.FC<CrewProps> = ({changeSection}) => {
 
     useEffect(()=>{
-        changeBackgroundPic('crew');
+        changeSection('crew');
     },[]);
 
     const {DouglasHurley,MarkShuttleworth,VictorGlover,AnoushehAnsari,} = crewData;

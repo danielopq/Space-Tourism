@@ -5,13 +5,13 @@ import { useEffect } from 'react';
 //Home page
 
 interface HomeProps{
-    changeBackgroundPic: (section:string)=>void;
+    changeSection: (section:string)=>void;
 }
 
-const Home:React.FC<HomeProps> = ({changeBackgroundPic}) => {
+const Home:React.FC<HomeProps> = ({changeSection}) => {
 
     useEffect(()=>{
-        changeBackgroundPic('home');
+        changeSection('home');
     },[]);
     
     const navigate = useNavigate();

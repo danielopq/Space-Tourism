@@ -1,22 +1,27 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './navBar.css';
 import { useNavigate } from 'react-router-dom';
 
 type NavBarProps = {
-    changeBackgroundPic:(section:string)=>void;
+    currentSection:string;
 };
+
+interface LinkState {
+    homeLinkState: string;
+    destinationLinkState: string;
+    crewLinkState: string;
+    technologyLinkState: string;
+}
 
 /**
  * Contains the main navigation bar. It remains visible at all times.
  * @returns {React.FC} - Navigation bar
  */
-const NavBar: React.FC = () => {
-    interface LinkState {
-        homeLinkState: string;
-        destinationLinkState: string;
-        crewLinkState: string;
-        technologyLinkState: string;
-    }
+const NavBar: React.FC<NavBarProps> = ({currentSection}) => {
+
+    useEffect(()=>{
+        handleClick(currentSection);
+    },[currentSection]);
 
     const navigate = useNavigate();
 

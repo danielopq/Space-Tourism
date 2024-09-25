@@ -12,14 +12,14 @@ interface ActivesSection {
 }
 
 interface DestinationProps{
-    changeBackgroundPic: (section:string)=>void;
+    changeSection: (section:string)=>void;
 }
 
 
-const Destination: React.FC<DestinationProps> = ({changeBackgroundPic}) => {
+const Destination: React.FC<DestinationProps> = ({changeSection}) => {
 
     useEffect(()=>{
-        changeBackgroundPic('destination');
+        changeSection('destination');
     },[]);
 
     const { moon, mars, europa, titan } = destinationData;

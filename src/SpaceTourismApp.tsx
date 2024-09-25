@@ -10,22 +10,23 @@ import { useState } from "react";
 const SpaceTourismApp: React.FC = () => {
 
     const [backGroundPic, setBackGroundPic] = useState<string>("homeBackGround");
+    const [currentSection, setCurrentSection] = useState<string>('home');
 
-    const changeBackgroundPic = (section: string) => {
+    const changeSection = (section: string): void => {
         setBackGroundPic(`${section}BackGround`);
+        setCurrentSection(section);
     }
 
     return (
         <main className={backGroundPic}>
-            <NavBar />
+            <NavBar currentSection={currentSection}/>
             <Routes>
-                <Route path="/" element={<Home changeBackgroundPic={changeBackgroundPic} />} />
-                <Route path="/destination" element={<Destination changeBackgroundPic={changeBackgroundPic} />} />
-                <Route path="/crew" element={<Crew changeBackgroundPic={changeBackgroundPic}/>} />
-                <Route path="/technology" element={<Technology changeBackgroundPic={changeBackgroundPic} />} />
+                <Route path="/" element={<Home changeSection={changeSection}/>} />
+                <Route path="/destination" element={<Destination changeSection={changeSection}  />} />
+                <Route path="/crew" element={<Crew changeSection={changeSection} />} />
+                <Route path="/technology" element={<Technology changeSection={changeSection} />} />
             </Routes>
         </main>
-
     )
 }
 

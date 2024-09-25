@@ -10,13 +10,13 @@ interface ActiveItems {
 }
 
 interface TechnologyProps{
-    changeBackgroundPic: (section:string)=>void;
+    changeSection: (section:string)=>void;
 }
 
-const Technology: React.FC<TechnologyProps> = ({changeBackgroundPic}) => {
+const Technology: React.FC<TechnologyProps> = ({changeSection}) => {
 
     useEffect(()=>{
-        changeBackgroundPic('technology');
+        changeSection('technology');
     },[]);
 
     const { launchVehicle, spacePort, spaceCapsule } = technologyData;
