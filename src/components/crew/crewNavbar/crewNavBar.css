@@ -1,4 +1,4 @@
-#crewNavbar{
+#crewNavbar {
     width: 180px;
     height: 15px;
     z-index: 100;
@@ -9,22 +9,55 @@
     justify-content: space-between;
 }
 
-.crewNavBarButton{
+.crewNavBarButton {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     transition: background-color 0.3s ease-in;
 }
 
-.crewNavBarButtonActive{
+.crewNavBarButtonActive {
     cursor: pointer;
-    background-color: rgba(255,255,255,0.17);
+    background-color: rgba(255, 255, 255, 0.17);
 }
 
-.crewNavBarButtonActive:Hover{
-    background-color: rgba(255,255,255,0.4);
+.crewNavBarButtonActive:Hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
-.crewNavBarButtonInactive{
+.crewNavBarButtonInactive {
     background-color: white;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #crewNavbar {
+        width: 88px;
+        height: 10px;
+        margin-top: 342px;
+    }
+
+    .crewNavBarButton {
+        width: 10px;
+        height: 10px;
+    }
+
+    .crewNavBarButtonActive {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.17);
+    }
+
+    .crewNavBarButtonActive:Hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .crewNavBarButtonInactive {
+        background-color: white;
+    }
+}
+
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
