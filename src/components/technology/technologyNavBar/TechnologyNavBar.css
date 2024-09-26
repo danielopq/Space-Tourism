@@ -1,4 +1,4 @@
-#technologyNavBar{
+#technologyNavBar {
     width: 80px;
     height: 304px;
     position: absolute;
@@ -9,28 +9,50 @@
     justify-content: space-between;
 }
 
-.techNavBarBt{
+.techNavBarBt {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     font: 400 32px/80px 'Bellefair-Regular';
     text-align: center;
     border: solid 1px transparent;
-    transition: border-color 0.4s ease-in,color 0.4s ease-in,background-color 0.4s ease-in ;
+    transition: border-color 0.4s ease-in, color 0.4s ease-in, background-color 0.4s ease-in;
 }
 
-.techNavBarBt-active{
-    cursor:default;
+.techNavBarBt-active {
+    cursor: default;
     background-color: white;
     color: #0B0D17;
 }
 
-.techNavBarBt-inactive{
+.techNavBarBt-inactive {
     cursor: pointer;
-    border: solid 1px rgba(255,255,255,0.25);
+    border: solid 1px rgba(255, 255, 255, 0.25);
     color: white;
 }
 
-.techNavBarBt-inactive:hover{
+.techNavBarBt-inactive:hover {
     border-color: white;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #technologyNavBar {
+        width: 200px;
+        height: 56px;
+        margin-top: 501px;
+        flex-direction: row;
+    }
+
+    .techNavBarBt {
+        width: 56px;
+        height: 56px;
+        font: 400 32px/56px 'Bellefair-Regular';
+    }
+}
+
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
