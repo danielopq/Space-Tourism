@@ -15,11 +15,19 @@ interface tripProps {
     active: boolean
 }
 
+/**
+ * Displays a trip.
+ * @param param - details: Trip details, index: z-index of the component within the parent, active:  Indicates whether it should be displayed or not
+ * @returns - Component containing all the details of a given trip.
+ */
 const Trip: React.FC<tripProps> = ({ details, index, active }) => {
     const { planetName, tripDescription, distance, travelTime, picPath } = details;
     
     const [tripOpacity, settripOpacity] = useState<string>('0')
 
+    /*
+    *Changes the component's opacity depending on whether it is active or not.
+    */
     useEffect(() => {
         active ? settripOpacity('1') : settripOpacity('0');
     }, [active])

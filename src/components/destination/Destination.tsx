@@ -15,9 +15,16 @@ interface DestinationProps{
     changeSection: (section:string)=>void;
 }
 
-
+/**
+ * Destination page
+ * @param {Function(string):void} - Function passed by reference to navigate between sections. 
+ * @returns - Component containing the destination page.
+ */
 const Destination: React.FC<DestinationProps> = ({changeSection}) => {
 
+    /*
+     Displays and set up the destination page. 
+    */
     useEffect(()=>{
         changeSection('destination');
     },[]);

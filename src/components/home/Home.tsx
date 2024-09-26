@@ -13,9 +13,9 @@ interface HomeProps{
  */
 const Home:React.FC<HomeProps> = ({changeSection}) => {
 
-     /*
+    /*
      Displays and set up the home page. 
-      */
+    */
     useEffect(()=>{
         changeSection('home');
     },[]);
