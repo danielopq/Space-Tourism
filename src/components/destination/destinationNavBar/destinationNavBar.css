@@ -10,11 +10,18 @@
     margin-left: 618px;
 }
 
+#desNavbarLinks{
+    width: 260px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .destNavBarButton{
     height: 29px;
     font: 400 16px/19px 'BarlowCondensed-Regular';
     letter-spacing: 2px;
-    margin-right: 32px;
 }
 
 .destNavBarInactive{
@@ -33,4 +40,52 @@
 .destNavBarActive:hover{
     border-bottom-color: rgba(255, 255, 255, 0.5);
     color: white;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #destinationNavbar{
+        margin: 475px 0px 0px;
+        justify-content: center;
+    }
+    
+    #desNavbarLinks{
+        width: 260px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .destNavBarButton{
+        height: 29px;
+        font: 400 16px/19px 'BarlowCondensed-Regular';
+        letter-spacing: 2px;
+        margin-right: 32px;
+    }
+    
+    .destNavBarInactive{
+        cursor: default;
+        color: white;
+        border-bottom: solid 3px white;
+    }
+    
+    .destNavBarActive{
+        cursor: pointer;
+        border-bottom: solid 3px rgba(255, 255, 255, 0);
+        transition: border-bottom-color 0.5s ease-out,color 0.5s ease-out;
+        color: var(--lightBlue);
+    }
+    
+    .destNavBarActive:hover{
+        border-bottom-color: rgba(255, 255, 255, 0.5);
+        color: white;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    
 }

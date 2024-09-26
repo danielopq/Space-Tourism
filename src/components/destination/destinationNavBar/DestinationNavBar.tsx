@@ -48,15 +48,17 @@ const DestinationNavbar: React.FC<navBarProps> = ({ setPlansActive }) => {
         }
 
         setLinkState({ ...newLinksState, [`${section}LinkState`]: 'destNavBarButton destNavBarInactive' });
-        setPlansActive({...newPlansActive,[`${section}Active`]:true})
+        setPlansActive({ ...newPlansActive, [`${section}Active`]: true })
     }
 
     return (
         <nav id="destinationNavbar">
-            <div className={moonLinkState} onClick={() => handleClick('moon')}>MOON</div>
-            <div className={marsLinkState} onClick={() => handleClick('mars')}>MARS</div>
-            <div className={europaLinkState} onClick={() => handleClick('europa')}>EUROPA</div>
-            <div className={titanLinkState} onClick={() => handleClick('titan')}>TITAN</div>
+            <div id="desNavbarLinks">
+                <div className={moonLinkState} onClick={() => handleClick('moon')}>MOON</div>
+                <div className={marsLinkState} onClick={() => handleClick('mars')}>MARS</div>
+                <div className={europaLinkState} onClick={() => handleClick('europa')}>EUROPA</div>
+                <div className={titanLinkState} onClick={() => handleClick('titan')}>TITAN</div>
+            </div>
         </nav>
     )
 }

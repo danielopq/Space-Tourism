@@ -1,7 +1,7 @@
 .destinationMain {
   position: absolute;
   width: inherit;
-  height: 734px;
+  height: 800px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -78,25 +78,24 @@
     align-items: center;
     margin-top: 48px;
     text-align: center;
-    border: solid 1px green;
   }
   
   .destinationPic {
     width: 300px;
     height: 300px;
-    margin: 42px;
+    margin: 42px 0px 0px;
   }
   
   .destinationContent {
     width: 514px;
-    height: 521px;
-    border: solid 1px blue;
+    height: 384px;
+    margin-top: 74px;
   }
   
   .destinationPlanetName {
     height: 92px;
-    margin-top: 132px;
-    font: 400 56px/92px 'Bellefair-Regular';
+    margin-top: 67px;
+    font: 400 80px/92px 'Bellefair-Regular';
   }
   
   .destinationMainText {
