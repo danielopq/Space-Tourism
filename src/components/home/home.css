@@ -67,12 +67,16 @@
     }
 
     #homeText {
-        width: 560px;
+        width: 512px;
         height: 334px;
     }
 
     #homeTextMain{
         height: 87px;
+    }
+
+    #homeExploreBt {
+        margin-top: 66px;
     }
     
 }
