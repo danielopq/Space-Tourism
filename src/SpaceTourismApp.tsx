@@ -7,11 +7,19 @@ import Crew from "./components/crew/Crew";
 import Technology from "./components/technology/Technology";
 import { useState } from "react";
 
+/**
+ * Main component containing all sections and their respective routes.
+ * @returns {React.FC} Main component
+ */
 const SpaceTourismApp: React.FC = () => {
 
     const [backGroundPic, setBackGroundPic] = useState<string>("homeBackGround");
     const [currentSection, setCurrentSection] = useState<string>('home');
 
+    /**
+     * Changes the background image and switches the current section to the desired one.
+     * @param {string} section - Selected section to be desplayed.
+     */
     const changeSection = (section: string): void => {
         setBackGroundPic(`${section}BackGround`);
         setCurrentSection(section);
