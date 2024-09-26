@@ -2,20 +2,29 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import './home.css'
 
-//Home page
-
 interface HomeProps{
     changeSection: (section:string)=>void;
 }
 
+/**
+ * Home page
+ * @param {Function(string):void} - Function passed by reference to navigate between sections. 
+ * @returns - Component containing the home page.
+ */
 const Home:React.FC<HomeProps> = ({changeSection}) => {
 
+     /*
+     Displays and set up the home page. 
+      */
     useEffect(()=>{
         changeSection('home');
     },[]);
     
     const navigate = useNavigate();
 
+    /**
+     * Navigates to the 'destination' section when the Explore button is pressed.
+     */
     const handleClick = ()=>{
         navigate('/destination');
     }
