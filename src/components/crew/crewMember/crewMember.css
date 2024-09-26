@@ -5,39 +5,90 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position:absolute;
+    position: absolute;
     transition: opacity 0.5s ease-out;
     opacity: 1;
 }
 
-.crewMain>div {
+.crewIntroduction{
     width: 539px;
     height: 734px;
 }
 
-.crewRank{
+
+.crewRank {
     width: inherit;
     height: 37px;
     margin-top: 197px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     font: 400 32px/37px 'Bellefair-Regular';
 }
 
-.crewName{
+.crewName {
     width: inherit;
     margin-top: 16px;
     color: white;
     font: 400 56px/64px 'Bellefair-Regular';
 }
 
-.crewDescription{
+.crewDescription {
     width: inherit;
     margin-top: 24px;
 }
 
 .crewPicture {
+    width: 539px;
+    height: 734px;
     background-size: 500px;
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.1) 40px,rgba(0, 0, 0, 1) 80px);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.1) 40px, rgba(0, 0, 0, 1) 80px);
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .crewMain {
+        margin-top: 48px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    .crewIntroduction{
+        width: 512px;
+        height: 305px;
+        border: solid 1px blue;
+    }
+
+    .crewRank {
+        height: 28px;
+        margin-top: 40px;
+        font: 400 24px/28px 'Bellefair-Regular';
+    }
+
+    .crewName {
+        font: 400 40px/46px 'Bellefair-Regular';
+    }
+
+    .crewDescription {
+        width: inherit;
+        height: 117px;
+        margin-top: 24px;
+        border: solid 1px red;
+    }
+
+    .crewPicture {
+        width: 446px;
+        height: 560px;
+        background-size: contain;
+        background-position: 50% 100%;
+        margin-top: 32px;
+    }
+}
+
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
