@@ -1,4 +1,4 @@
-.technologyMain{
+.technologyMain {
     width: 1275px;
     height: 734px;
     display: flex;
@@ -10,36 +10,82 @@
     opacity: 1;
 }
 
-.technologyMain > div{
-    height: 600px;
-    margin-top: 67px;
-}
-
-.technologyMainText{
+.technologyMainText {
     width: 635px;
+    height: 600px;
     padding: 148px 0px 0px 144px;
 }
 
-.technologyHeader{
+.technologyHeader {
     height: 37px;
     font: 400 32px/37px 'Bellefair-Regular';
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.technologyItem{
+.technologyItem {
     margin-top: 16px;
     font: 400 56px/64px 'Bellefair-Regular';
     color: white;
 }
 
-.technologyDescription{
+.technologyDescription {
     margin-top: 24px;
 }
 
-.technologyPic{
+.technologyPic {
     width: 608px;
     height: 600px;
+    margin-top: 67px;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .technologyMain {
+        width: 688px;
+        height: 800px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 48px;
+        text-align: center;
+        border: solid 1px red;
+    }
+
+    .technologyMainText {
+        width: 512px;
+        height: 251px;
+        margin-top: 0px;
+        padding:0px;
+        border: solid 1px red;
+    }
+
+    .technologyHeader {
+        height: 28px;
+        font: 400 32px/28px 'Bellefair-Regular';
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .technologyItem {
+        font: 400 40px/46px 'Bellefair-Regular';
+    }
+
+    .technologyDescription {
+        margin-top: 16px;
+    }
+
+    .technologyPic {
+        width: 100vw;
+        height: 357px;
+        margin-top: 64px;
+        background-size: 100vw;
+    }
+}
+
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
