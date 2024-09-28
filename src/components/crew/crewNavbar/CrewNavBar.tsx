@@ -15,6 +15,7 @@ interface navBarProps {
 interface ButtonState {
     [buttonRef: string]: string,
 }
+
 /**
  * Crew navigation bar component. Displays different crew members based on the selected button
  * @param param0 - Switches the active crew member profile.
@@ -30,6 +31,10 @@ const CrewNavBar: React.FC<navBarProps> = ({setActiveProfile}) => {
 
     const { DouglasHurleyBt, MarkShuttleworthBt, VictorGloverBt, AnoushehAnsariBt, } = buttonsState;
 
+    /**
+     * Displays the selected crew member's profile.
+     * @param {string} crewMember - Crew member's name.
+     */
     const handleButton = (crewMember: string) => {
         let newButtonState = {
             DouglasHurleyBt: 'crewNavBarButton crewNavBarButtonActive',
