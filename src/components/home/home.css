@@ -59,7 +59,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     #home {
         width: 688px;
-        height: 672px;
+        height: 712px;
         margin:128px 0px 0px;
         padding-top: 0px;
         flex-direction: column;
@@ -76,7 +76,7 @@
     }
 
     #homeExploreBt {
-        margin-top: 66px;
+        margin-top: 106px;
     }
     
 }
