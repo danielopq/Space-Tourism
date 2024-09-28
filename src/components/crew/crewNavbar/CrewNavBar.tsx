@@ -15,7 +15,11 @@ interface navBarProps {
 interface ButtonState {
     [buttonRef: string]: string,
 }
-
+/**
+ * Crew navigation bar component. Displays different crew members based on the selected button
+ * @param param0 - Switches the active crew member profile.
+ * @returns - The navigation bar for the crew section.
+ */
 const CrewNavBar: React.FC<navBarProps> = ({setActiveProfile}) => {
     const [buttonsState, setButtonsState] = useState<ButtonState>({
         DouglasHurleyBt: 'crewNavBarButton crewNavBarButtonInactive',
