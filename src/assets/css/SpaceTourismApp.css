@@ -27,5 +27,9 @@ main{
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
-    
+    main{
+        width: 100vw;
+        height: 800px;
+        padding: 0px;
+    }
 }

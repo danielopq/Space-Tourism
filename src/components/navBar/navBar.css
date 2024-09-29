@@ -6,14 +6,11 @@
     align-items: center;
 }
 
-#mainNavBar > div{
-    height: inherit;
-    display:flex;
-    flex-direction: row;
-}
-
 #navBarLeft{
     width: 736px;
+    height: 96px;
+    display:flex;
+    flex-direction: row;
     padding-left: 64px;
     align-items: center;
     margin-right: -32px;
@@ -35,6 +32,9 @@
 
 #navBarRight{
     width: 736px;
+    height: 96px;
+    display:flex;
+    flex-direction: row;
     padding-right: 64px;
     align-items: flex-start;
     justify-content: flex-end;
@@ -75,6 +75,69 @@
     letter-spacing: 2px;
 }
 
+#navBarMobile{
+    width: 254px;
+    height: 800px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navBarMobileBlur{
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+#navBarMobileTop{
+    width: inherit;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    justify-content: flex-end;
+}
+
+#navBarMobileIcon{
+    width: 24px;
+    height: 21px;
+    background-position: center;
+    background-size: 24px 21px;
+    background-repeat: no-repeat;
+}
+
+.burgerIcon{
+    background-image: url('./img/icon-hamburger.svg');
+}
+
+.closeIcon{
+    background-image: url('./img/icon-close.svg');
+}
+
+#navBarMobileMenu{
+    width: inherit;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+#navBarMobileLinks{
+    width: inherit;
+    height: 172px;
+    margin-top: 80px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobilelinksHiden{
+    display: none;
+}
+
+.mobilelinksDisplayed{
+    display: flex;
+}
+
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -104,9 +167,69 @@
     }
 }
 
-
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
+    #mainNavBar{
+        width: 100vw;
+        height: 800px;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
     
+    #navBarLeft{
+        width: 100%;
+        height: 88px;
+        padding: 0px  0px 0px 24px;
+        margin-right: 0px;
+    }
+    
+    #logo{
+        width: 40px;
+        height: 40px;
+        background: url('./img/logo.svg') center/40px no-repeat ;
+    }
+    
+    #navBarline{
+        display: none;
+    }
+    
+    #navBarRight{
+        display: none!important;
+        background-color: transparent;
+    }
+
+    #navBarMobile{
+        display: flex;
+    }
+
+    .navbarSectionLink{
+        height: 19px;
+        margin-left: 32px;
+    }
+    
+    .active {
+        border-bottom: none;
+        border-right: solid 3px rgba(255, 255, 255, 0);
+        transition: border-bottom-color 0.75s ease-out;
+        transition: border-right-color 0.75s ease-out;
+    }
+    
+    .active:hover {
+        border-bottom-color: none;
+        border-right-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .inactive{
+        border-bottom: none;
+        border-right: solid 3px white;
+    }
+    
+    .sectionNumberDeco{
+        font: 700 16px/19px 'BarlowCondensed-Bold';
+    }
+    
+    .sectionName{
+        font: 400 16px/19px 'BarlowCondensed-Regular';
+    }
 }
