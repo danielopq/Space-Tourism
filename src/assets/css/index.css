@@ -147,7 +147,7 @@ main {
         width: 100vw;
         height: 792px;
         margin-top: 0px;
-        border: solid 1px blue;
+        align-items: center;
     }
 
     .sectionHeader {
