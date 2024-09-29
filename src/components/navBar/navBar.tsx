@@ -57,6 +57,9 @@ const NavBar: React.FC<NavBarProps> = ({ currentSection }) => {
         !mobileMenuVisible && displayMobileMenu();
     }
 
+    /**
+     * Displays or hides the mobile menu links, changes the mobile menu icon, and sets the mobile menu background.
+     */
     const displayMobileMenu = (): void => {
         setMobileMenuVisible(!mobileMenuVisible);
         if (navBarMobileIcon.current) {
