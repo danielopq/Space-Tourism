@@ -28,60 +28,61 @@
 
 @keyframes fadeIn {
     from {
-      opacity: 0;
+        opacity: 0;
     }
-    to {
-      opacity: 1;
-    }
-  }
 
-*{
+    to {
+        opacity: 1;
+    }
+}
+
+* {
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --lightBlue: #D0D6F9;
 }
 
-body{
+body {
     width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin:0px;
+    margin: 0px;
     padding: 0px;
     background-color: black;
 }
 
-nav{
+nav {
     padding: 0px;
     margin: 0px;
 }
 
-h1{
+h1 {
     padding: 0px;
     margin: 0px;
     color: white;
 }
 
-p{
+p {
     margin: 0px;
     padding: 0px;
 }
 
-main{
+main {
     margin: 0px;
 }
 
-.mainText{
+.mainText {
     font: 400 18px/32px 'Barlow-Regular';
     color: var(--lightBlue);
 }
 
 /*Defines sections size and margins*/
-.sectionFrame{
+.sectionFrame {
     width: 1110px;
     height: 792px;
     display: flex;
@@ -90,22 +91,23 @@ main{
     align-items: flex-start;
     margin-top: 48px;
 }
+
 /*Defines section header size and margins*/
-.sectionHeader{
+.sectionHeader {
     height: 34px;
     width: 100%;
 }
 
 /*Defines the section number font style*/
-.sectionNumber{
+.sectionNumber {
     font: 700 28px/34px 'BarlowCondensed-Bold';
-    color: rgba(255,255,255,0.25);
+    color: rgba(255, 255, 255, 0.25);
     letter-spacing: 4.72px;
 }
 
 /*Defines the section title font style*/
 
-.sectionTitle{
+.sectionTitle {
     font: 400 28px/34px 'BarlowCondensed-Regular';
     color: white;
     letter-spacing: 4.2px;
@@ -114,25 +116,25 @@ main{
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .sectionFrame{
+    .sectionFrame {
         width: 688px;
         height: auto;
         margin-top: 40px;
     }
 
-    .sectionHeader{
+    .sectionHeader {
         height: 24px;
     }
 
-    .sectionNumber{
+    .sectionNumber {
         font: 700 20px/24px 'BarlowCondensed-Bold';
     }
-        
-    .sectionTitle{
+
+    .sectionTitle {
         font: 400 20px/24px 'BarlowCondensed-Regular';
     }
 
-    .mainText{
+    .mainText {
         font: 400 16px/31px 'Barlow-Regular';
     }
 }
@@ -141,5 +143,7 @@ main{
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
-    
+    .mainText {
+        font: 400 15px/27px 'Barlow-Regular';
+    }
 }

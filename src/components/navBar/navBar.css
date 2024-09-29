@@ -1,39 +1,39 @@
-#mainNavBar{
+#mainNavBar {
     width: 1440px;
     height: 96px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#navBarLeft{
+#navBarLeft {
     width: 736px;
     height: 96px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding-left: 64px;
     align-items: center;
     margin-right: -32px;
 }
 
-#logo{
+#logo {
     width: 48px;
     height: 48px;
-    background: url('./img/logo.svg') center/48px no-repeat ;
+    background: url('./img/logo.svg') center/48px no-repeat;
 }
 
-#navBarline{
+#navBarline {
     z-index: 3;
     width: 560px;
     height: 1px;
-    background-color: rgba(255,255,255,0.25);
+    background-color: rgba(255, 255, 255, 0.25);
     margin-left: 64px;
 }
 
-#navBarRight{
+#navBarRight {
     width: 736px;
     height: 96px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding-right: 64px;
     align-items: flex-start;
@@ -43,7 +43,7 @@
     -webkit-backdrop-filter: blur(20px);
 }
 
-.navbarSectionLink{
+.navbarSectionLink {
     height: 93px;
     margin-left: 48px;
     color: white;
@@ -59,37 +59,39 @@
     border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
-.inactive{
+.inactive {
     cursor: default;
     border-bottom: solid 3px white;
 }
 
 
-.sectionNumberDeco{
+.sectionNumberDeco {
     font: 700 16px/93px 'BarlowCondensed-Bold';
     letter-spacing: 2.7px;
 }
 
-.sectionName{
+.sectionName {
     font: 400 16px/93px 'BarlowCondensed-Regular';
     letter-spacing: 2px;
 }
 
-#navBarMobile{
+#navBarMobile {
     width: 254px;
-    height: 800px;
+    height: 88px;
     display: none;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 100;
 }
 
-.navBarMobileBlur{
+.navBarMobileBlur {
+    height: 800px!important;
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
 
-#navBarMobileTop{
+#navBarMobileTop {
     width: inherit;
     height: 88px;
     display: flex;
@@ -98,7 +100,7 @@
     justify-content: flex-end;
 }
 
-#navBarMobileIcon{
+#navBarMobileIcon {
     width: 24px;
     height: 21px;
     background-position: center;
@@ -106,15 +108,15 @@
     background-repeat: no-repeat;
 }
 
-.burgerIcon{
+.burgerIcon {
     background-image: url('./img/icon-hamburger.svg');
 }
 
-.closeIcon{
+.closeIcon {
     background-image: url('./img/icon-close.svg');
 }
 
-#navBarMobileMenu{
+#navBarMobileMenu {
     width: inherit;
     height: 800px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -122,7 +124,7 @@
     -webkit-backdrop-filter: blur(20px);
 }
 
-#navBarMobileLinks{
+#navBarMobileLinks {
     width: inherit;
     height: 172px;
     margin-top: 80px;
@@ -130,39 +132,39 @@
     justify-content: space-between;
 }
 
-.mobilelinksHiden{
+.mobilelinksHiden {
     display: none;
 }
 
-.mobilelinksDisplayed{
+.mobilelinksDisplayed {
     display: flex;
 }
 
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    #mainNavBar{
+    #mainNavBar {
         width: 100vw;
         align-items: flex-start;
     }
 
-    #navBarLeft{
+    #navBarLeft {
         width: 128px;
         padding: 0px 39px;
         margin-right: 0px;
     }
-    
-    #navBarline{
+
+    #navBarline {
         display: none;
     }
-    
-    #navBarRight{
+
+    #navBarRight {
         width: 100%;
         padding: 0px 0px 0px 90px;
         justify-content: flex-start;
     }
-    
-    .navbarSectionLink{
+
+    .navbarSectionLink {
         margin: 0px 48px 0px 0px;
     }
 }
@@ -170,66 +172,66 @@
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
-    #mainNavBar{
+    #mainNavBar {
         width: 100vw;
-        height: 800px;
+        height: 88px;
         align-items: flex-start;
         justify-content: flex-end;
     }
-    
-    #navBarLeft{
+
+    #navBarLeft {
         width: 100%;
         height: 88px;
-        padding: 0px  0px 0px 24px;
+        padding: 0px 0px 0px 24px;
         margin-right: 0px;
     }
-    
-    #logo{
+
+    #logo {
         width: 40px;
         height: 40px;
-        background: url('./img/logo.svg') center/40px no-repeat ;
+        background: url('./img/logo.svg') center/40px no-repeat;
     }
-    
-    #navBarline{
+
+    #navBarline {
         display: none;
     }
-    
-    #navBarRight{
-        display: none!important;
+
+    #navBarRight {
+        display: none !important;
         background-color: transparent;
     }
 
-    #navBarMobile{
+    #navBarMobile {
         display: flex;
     }
 
-    .navbarSectionLink{
+    .navbarSectionLink {
         height: 19px;
         margin-left: 32px;
     }
-    
+
     .active {
         border-bottom: none;
         border-right: solid 3px rgba(255, 255, 255, 0);
         transition: border-bottom-color 0.75s ease-out;
         transition: border-right-color 0.75s ease-out;
     }
-    
+
     .active:hover {
         border-bottom-color: none;
         border-right-color: rgba(255, 255, 255, 0.5);
     }
-    
-    .inactive{
+
+    .inactive {
         border-bottom: none;
         border-right: solid 3px white;
     }
-    
-    .sectionNumberDeco{
+
+    .sectionNumberDeco {
         font: 700 16px/19px 'BarlowCondensed-Bold';
     }
-    
-    .sectionName{
+
+    .sectionName {
         font: 400 16px/19px 'BarlowCondensed-Regular';
     }
 }

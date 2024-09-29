@@ -88,19 +88,20 @@
     #home {
         width: 375px;
         height: 724px;
-        margin-top: 0px;
-        padding-top: 0px;
+        margin-top: 88px;
+        padding-top: 24px;
         flex-direction: column;
+        justify-content: flex-start;
         text-align: center;
     }
-    
+
     #homeText {
-        width: inherit;
+        width: 327px;
         height: 294px;
     }
     
     #homeTextHeader {
-        width: inherit;
+        width: 327px;
         height: 19px;
         font: 400 19px/19px 'BarlowCondensed-Regular';
         letter-spacing: 2.85px;
@@ -112,11 +113,12 @@
     }
     
     #homeTextMain{
-        width: inherit;
-        height: 96px;
+        width: 327px;
+        height: 135px;
     }
     
     #homeExploreBt {
+        margin-top: 119px;
         width: 144px;
         height: 144px;
         font: 400 20px 'Bellefair-Regular';
