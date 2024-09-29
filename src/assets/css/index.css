@@ -143,6 +143,29 @@ main {
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
+    .sectionFrame {
+        width: 100vw;
+        height: 792px;
+        margin-top: 0px;
+        border: solid 1px blue;
+    }
+
+    .sectionHeader {
+        height: 19px;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .sectionNumber {
+        font: 700 16px/19px 'BarlowCondensed-Bold';
+        letter-spacing: 2.4px;
+    }
+
+    .sectionTitle {
+        font: 400 16px/19px 'BarlowCondensed-Regular';
+        letter-spacing: 2.4px;
+    }
+
     .mainText {
         font: 400 15px/27px 'Barlow-Regular';
     }
