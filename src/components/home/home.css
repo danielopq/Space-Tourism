@@ -59,7 +59,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     #home {
         width: 688px;
-        height: 672px;
+        height: 712px;
         margin:128px 0px 0px;
         padding-top: 0px;
         flex-direction: column;
@@ -76,7 +76,7 @@
     }
 
     #homeExploreBt {
-        margin-top: 66px;
+        margin-top: 106px;
     }
     
 }
@@ -85,5 +85,45 @@
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
+    #home {
+        width: 375px;
+        height: 724px;
+        margin-top: 0px;
+        padding-top: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
     
+    #homeText {
+        width: inherit;
+        height: 294px;
+    }
+    
+    #homeTextHeader {
+        width: inherit;
+        height: 19px;
+        font: 400 19px/19px 'BarlowCondensed-Regular';
+        letter-spacing: 2.85px;
+    }
+    
+    #homeText h1 {
+        height: 92px;
+        font: 400 80px/92px 'Bellefair-Regular';
+    }
+    
+    #homeTextMain{
+        width: inherit;
+        height: 96px;
+    }
+    
+    #homeExploreBt {
+        width: 144px;
+        height: 144px;
+        font: 400 20px 'Bellefair-Regular';
+    }
+    
+    #homeExploreBt:hover {
+        box-shadow: 0 0 0 88px rgba(255,255,255,0.1);
+        color: rgba(11,13,23,0.5)
+    }
 }
