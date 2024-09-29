@@ -85,7 +85,7 @@
 }
 
 .navBarMobileBlur {
-    height: 800px!important;
+    height: 880px!important;
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);

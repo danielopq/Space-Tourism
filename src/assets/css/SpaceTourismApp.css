@@ -29,7 +29,7 @@ main{
 @media screen and (max-width:767px) {
     main{
         width: 100vw;
-        height: 800px;
+        height: auto;
         padding: 0px;
     }
 }
