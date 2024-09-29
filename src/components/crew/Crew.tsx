@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './crew.css';
+import SectionHeader from '../sectionHeader/SectionHeader';
 import crewData from './crewData/crewData';
 import CrewMember from './crewMember/CrewMember';
 import CrewNavBar from './crewNavbar/CrewNavBar';
@@ -39,10 +40,7 @@ const Crew: React.FC<CrewProps> = ({ changeSection }) => {
 
     return (
         <div id="crew" className='sectionFrame'>
-            <div className='sectionHeader'>
-                <span className='sectionNumber'>02 </span>
-                <span className='sectionTitle'>MEET YOUR CREW</span>
-            </div>
+            <SectionHeader sectionNumber='02' sectionTitle='MEET YOUR CREW'/>
             <CrewNavBar setActiveProfile={setActiveProfile} />
             <CrewMember crewMenberProfile={DouglasHurley} activeProfile={DouglasHurleyActive} index={1} />
             <CrewMember crewMenberProfile={MarkShuttleworth} activeProfile={MarkShuttleworthActive} index={2} />

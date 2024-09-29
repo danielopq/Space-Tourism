@@ -1,0 +1,66 @@
+/*Defines section header size and margins*/
+.sectionHeader {
+    height: 34px;
+    width: 100%;
+}
+
+/*Defines the section number font style*/
+.sectionNumber {
+    font: 700 28px/34px 'BarlowCondensed-Bold';
+    color: rgba(255, 255, 255, 0.25);
+    letter-spacing: 4.72px;
+}
+
+/*Defines the section title font style*/
+
+.sectionTitle {
+    font: 400 28px/34px 'BarlowCondensed-Regular';
+    color: white;
+    letter-spacing: 4.2px;
+}
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .sectionHeader {
+        height: 24px;
+    }
+
+    .sectionNumber {
+        font: 700 20px/24px 'BarlowCondensed-Bold';
+    }
+
+    .sectionTitle {
+        font: 400 20px/24px 'BarlowCondensed-Regular';
+    }
+
+    .mainText {
+        font: 400 16px/31px 'Barlow-Regular';
+    }
+}
+
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {
+    .sectionHeader {
+        height: 19px;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .sectionNumber {
+        font: 700 16px/19px 'BarlowCondensed-Bold';
+        letter-spacing: 2.4px;
+    }
+
+    .sectionTitle {
+        font: 400 16px/19px 'BarlowCondensed-Regular';
+        letter-spacing: 2.4px;
+    }
+
+    .mainText {
+        font: 400 15px/27px 'Barlow-Regular';
+    }
+}

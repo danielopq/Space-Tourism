@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './technology.css';
+import SectionHeader from '../sectionHeader/SectionHeader';
 import TerminologyCard from './terminologyCard/TerminologyCard';
 import technologyData from './technologyData/technologyData';
 import TechnologyNavBar from './technologyNavBar/TechnologyNavBar';
@@ -32,10 +33,7 @@ const Technology: React.FC<TechnologyProps> = ({changeSection}) => {
 
     return (
         <div id="technology" className='sectionFrame'>
-            <div className='sectionHeader'>
-                <span className='sectionNumber'>03 </span>
-                <span className='sectionTitle'>SPACE LAUNCH 101</span>
-            </div>
+            <SectionHeader sectionNumber='03' sectionTitle='SPACE LAUNCH 101'/>
             <TechnologyNavBar setItemsActive={setActiveItems}/>
             <TerminologyCard item={launchVehicle} active={launchVehicleActive} index={1} />
             <TerminologyCard item={spacePort} active={spacePortActive} index={2} />
