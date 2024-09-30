@@ -19,7 +19,7 @@ interface DestinationProps{
 /**
  * Destination page
  * @param {Function(string):void} - Function passed by reference to navigate between sections. 
- * @returns - Component containing the destination page.
+ * @returns {JSX.Element} - Component containing the destination page.
  */
 const Destination: React.FC<DestinationProps> = ({changeSection}) => {
 

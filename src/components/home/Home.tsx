@@ -9,7 +9,7 @@ interface HomeProps{
 /**
  * Home page
  * @param {Function(string):void} - Function passed by reference to navigate between sections. 
- * @returns - Component containing the home page.
+ * @returns {JSX.Element} - Component containing the home page.
  */
 const Home:React.FC<HomeProps> = ({changeSection}) => {
 

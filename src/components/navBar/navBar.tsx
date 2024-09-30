@@ -15,7 +15,7 @@ interface LinkState {
 
 /**
  * Contains the main navigation bar. It remains visible at all times.
- * @returns {React.FC} - Navigation bar
+ * @returns {JSX.Element} - Navigation bar
  */
 const NavBar: React.FC<NavBarProps> = ({ currentSection }) => {
     const navigate = useNavigate();

@@ -9,7 +9,7 @@ interface TripPlan {
     picPath: string
 }
 
-interface tripProps {
+interface TripProps {
     details: TripPlan,
     index: string,
     active: boolean
@@ -17,10 +17,10 @@ interface tripProps {
 
 /**
  * Displays a trip.
- * @param param - details: Trip details, index: z-index of the component within the parent, active:  Indicates whether it should be displayed or not
- * @returns - Component containing all the details of a given trip.
+ * @param {TripProps} param - details: Trip details, index: z-index of the component within the parent, active:  Indicates whether it should be displayed or not
+ * @returns {JSX.Element} - Component containing all the details of a given trip.
  */
-const Trip: React.FC<tripProps> = ({ details, index, active }) => {
+const Trip: React.FC<TripProps> = ({ details, index, active }) => {
     const { planetName, tripDescription, distance, travelTime, picPath } = details;
     
     const [tripOpacity, settripOpacity] = useState<string>('0')

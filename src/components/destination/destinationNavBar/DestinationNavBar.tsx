@@ -12,6 +12,12 @@ interface navBarProps {
     setPlansActive: (activeSections: ActivesSection) => void;
 }
 
+
+/**
+ * Renders the destination navigation bar for selecting different trips.
+ * @param {Function} param0 - Object containing a function to update the active trip.
+ * @returns {JSX.Element} - The destination navigation bar component.
+ */
 const DestinationNavbar: React.FC<navBarProps> = ({ setPlansActive }) => {
 
     interface LinksState {
@@ -21,6 +27,7 @@ const DestinationNavbar: React.FC<navBarProps> = ({ setPlansActive }) => {
         titanLinkState: string;
     }
 
+    // Manages the state of the navigation links.
     const [linksState, setLinkState] = useState<LinksState>(
         {
             moonLinkState: 'destNavBarButton destNavBarInactive',
@@ -32,6 +39,10 @@ const DestinationNavbar: React.FC<navBarProps> = ({ setPlansActive }) => {
 
     const { moonLinkState, marsLinkState, europaLinkState, titanLinkState } = linksState
 
+    /**
+     * Updates the active link and sets the corresponding active trip.
+     * @param {string} section - Name of the selected section (e.g., 'moon', 'mars').
+     */
     const handleClick = (section: string): void => {
         let newLinksState: LinksState = {
             moonLinkState: 'destNavBarButton destNavBarActive',

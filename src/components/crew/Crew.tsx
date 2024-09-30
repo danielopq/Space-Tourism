@@ -17,18 +17,20 @@ interface CrewProps {
 }
 
 /**
- * Crew page
- * @param param0 - ChangeSection function: Located at parent component. Changes the background image and switches the current section to the desired one.
- * @returns - Component containing the home page.
+ * Renders the crew page.
+ * @param {CrewProps} param0 - Props containing the `changeSection` function, which changes the background image and updates the current section in the parent component.
+ * @returns {JSX.Element} - The crew page component.
  */
 const Crew: React.FC<CrewProps> = ({ changeSection }) => {
 
+    // Update the section to 'crew' on component mount.
     useEffect(() => {
         changeSection('crew');
     }, []);
 
     const { DouglasHurley, MarkShuttleworth, VictorGlover, AnoushehAnsari, } = crewData;
 
+    // Manages the active crew member profile.
     const [activeProfile, setActiveProfile] = useState<ActiveProfiles>({
         DouglasHurleyActive: true,
         MarkShuttleworthActive: false,

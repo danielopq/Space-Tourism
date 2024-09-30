@@ -8,7 +8,7 @@ interface ActiveProfiles {
     AnoushehAnsariActive: boolean;
 }
 
-interface navBarProps {
+interface NavBarProps {
     setActiveProfile: (activeProfile: ActiveProfiles) => void;
 }
 
@@ -17,11 +17,11 @@ interface ButtonState {
 }
 
 /**
- * Crew navigation bar component. Displays different crew members based on the selected button
- * @param param0 - Switches the active crew member profile.
- * @returns - The navigation bar for the crew section.
+ * Crew navigation bar component that allows users to switch between different crew members.
+ * @param {NavBarProps} param0 - Props containing the function to update the active crew member profile.
+ * @returns {JSX.Element} - The navigation bar for selecting crew members.
  */
-const CrewNavBar: React.FC<navBarProps> = ({setActiveProfile}) => {
+const CrewNavBar: React.FC<NavBarProps> = ({setActiveProfile}) => {
     const [buttonsState, setButtonsState] = useState<ButtonState>({
         DouglasHurleyBt: 'crewNavBarButton crewNavBarButtonInactive',
         MarkShuttleworthBt: 'crewNavBarButton crewNavBarButtonActive',
@@ -32,8 +32,8 @@ const CrewNavBar: React.FC<navBarProps> = ({setActiveProfile}) => {
     const { DouglasHurleyBt, MarkShuttleworthBt, VictorGloverBt, AnoushehAnsariBt, } = buttonsState;
 
     /**
-     * Displays the selected crew member's profile.
-     * @param {string} crewMember - Crew member's name.
+     * Updates the state to display the selected crew member's profile and sets the corresponding button to inactive.
+     * @param {string} crewMember - The name of the crew member to be displayed.
      */
     const handleButton = (crewMember: string) => {
         let newButtonState = {
@@ -63,4 +63,4 @@ const CrewNavBar: React.FC<navBarProps> = ({setActiveProfile}) => {
         </nav>
     )
 }
-export default CrewNavBar
+export default CrewNavBar;

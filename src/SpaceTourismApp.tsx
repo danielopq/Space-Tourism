@@ -11,7 +11,7 @@ import * as backGroundPics from '../src/assets/img';
 
 /**
  * Main component containing all sections and their respective routes.
- * @returns {React.FC} Main component
+ * @returns {JSX.Element} - Main component
  */
 
 type BackgroundPicKeys = 'homeDesktop' | 'homeMobile' | 'homeTablet' | 'destinationDesktop' | 'destinationMobile' | 'destinationTablet' | 'crewDesktop' | 'crewMobile' | 'crewTablet' | 'technologyDesktop' | 'technologyMobile' | 'technologyTablet';
