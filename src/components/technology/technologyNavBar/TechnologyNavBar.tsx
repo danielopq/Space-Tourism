@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './TechnologyNavBar.css';
+import './technologyNavBar.css';
 
 interface ActiveItems {
     launchVehicleActive: boolean;
