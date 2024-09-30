@@ -93,7 +93,7 @@
     .crewMain {
         width: 327px;
         height: 701px;
-        margin-top: 24px;
+        margin-top: 67px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -125,5 +125,6 @@
         background-size: contain;
         background-position: 50% 100%;
         mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 1) 30px);
+        margin-top: 32px;
     }
 }

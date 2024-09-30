@@ -61,5 +61,31 @@
 /*############################## MOBILE VERSION ##############################*/
 
 @media screen and (max-width:767px) {
+    #crewNavbar {
+        width: 88px;
+        height: 10px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 376px;
+    }
     
+    .crewNavBarButton {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .crewNavBarButtonActive {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.17);
+    }
+    
+    .crewNavBarButtonActive:Hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .crewNavBarButtonInactive {
+        background-color: white;
+    }
 }
