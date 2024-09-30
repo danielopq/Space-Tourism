@@ -89,4 +89,41 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    .crewMain {
+        width: 327px;
+        height: 701px;
+        margin-top: 24px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .crewIntroduction{
+        width: inherit;
+        height: 319px;
+    }
+    
+    
+    .crewRank {
+        width: inherit;
+        height: 21px;
+        margin-top: 40px;
+        font: 400 24px/21px 'Bellefair-Regular';
+    }
+    
+    .crewName {
+        width: inherit;
+        margin-top: 8px;
+        font: 400 24px/28px 'Bellefair-Regular';
+    }
+    
+    .crewPicture {
+        width: 271px;
+        height: 340px;
+        background-size: contain;
+        background-position: 50% 100%;
+        mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.1) 10px, rgba(0, 0, 0, 1) 30px);
+    }
+}
