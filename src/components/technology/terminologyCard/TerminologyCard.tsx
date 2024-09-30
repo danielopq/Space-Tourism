@@ -17,7 +17,7 @@ interface TerminologyCardProps{
 /**
  * Component that contains a terminology card.
  * @param param0 - item: terminology item to be displayed; active: indicates whether it should be displayed or not; index: z-index of the card.
- * @returns - Terminology card component. 
+ * @returns {JSX.Element} - Terminology card component. 
  */
 const TerminologyCard: React.FC<TerminologyCardProps> = ({item,active,index}) => {
     const {itemName,description,portraitPicPath,landScapePicPath} = item;

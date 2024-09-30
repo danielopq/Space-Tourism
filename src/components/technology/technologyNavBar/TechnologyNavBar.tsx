@@ -11,8 +11,12 @@ interface TechNavBarProps {
     setItemsActive: (activeItems: ActiveItems) => void;
 }
 
+/**
+ * Component that renders the terminology navigation bar.
+ * @param {ActiveItems} param0 - State of the active card names.
+ * @returns {JSX.Element} The terminology navigation bar component.
+ */
 const TechnologyNavBar: React.FC<TechNavBarProps> = ({ setItemsActive }) => {
-
     interface ButtonsState {
         launchVehicleBtState: string;
         spacePortBtState: string;
@@ -27,6 +31,10 @@ const TechnologyNavBar: React.FC<TechNavBarProps> = ({ setItemsActive }) => {
 
     const { launchVehicleBtState, spacePortBtState, spaceCapsuleBtState } = buttonsState;
 
+    /**
+     * Changes the state of a button in the navigation bar.
+     * @param {string} itemName - Name of the card to be displayed.
+     */
     const handleClick = (itemName: string): void => {
         let newButtonsState: ButtonsState = {
             launchVehicleBtState: 'techNavBarBt techNavBarBt-inactive',

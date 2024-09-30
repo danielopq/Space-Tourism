@@ -15,6 +15,12 @@ interface TechnologyProps{
     changeSection: (section:string)=>void;
 }
 
+
+/**
+ * Component that renders the technology section.
+ * @param {ActiveItems} param0 
+ * @returns {JSX.Element} - Technology section.
+ */
 const Technology: React.FC<TechnologyProps> = ({changeSection}) => {
 
     useEffect(()=>{
@@ -23,6 +29,7 @@ const Technology: React.FC<TechnologyProps> = ({changeSection}) => {
 
     const { launchVehicle, spacePort, spaceCapsule } = technologyData;
 
+    //C
     const [activeItems, setActiveItems] = useState<ActiveItems>({
         launchVehicleActive: true,
         spacePortActive: false,
