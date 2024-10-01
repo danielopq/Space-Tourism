@@ -17,13 +17,13 @@ The design is highly engaging and visually appealing, incorporating a variety of
 
 ### Screenshots
 
-- Home desktop version: [https://github.com/danielopq/Space-Tourism/screenshots/home-desktop.png]
-- Home tablet version: [https://github.com/danielopq/Space-Tourism/screenshots/home-tablet.png]
-- Home mobile version: [https://github.com/danielopq/Space-Tourism/screenshots/home-mobile.png]
+- Home desktop version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/home-desktop.png]
+- Home tablet version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/home-tablet.png]
+- Home mobile version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/home-mobile.png]
 
-- Moon desktop version: [https://github.com/danielopq/Space-Tourism/screenshots/moon-desktop.png]
-- Moon tablet version: [https://github.com/danielopq/Space-Tourism/screenshots/moon-tablet.png]
-- Moon mobile version: [https://github.com/danielopq/Space-Tourism/screenshots/moon-mobile.png]
+- Moon desktop version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/moon-desktop.png]
+- Moon tablet version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/moon-tablet.png]
+- Moon mobile version: [https://github.com/danielopq/Space-Tourism/blob/main/screenshots/moon-mobile.png]
 
 
 ### Links
